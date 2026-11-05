@@ -10,7 +10,7 @@
   "derived": 1164,
   "orgs_with_inst": 37,
   "orgs_with_grant_papers": 8,
-  "orgs_with_bench": 9,
+  "orgs_with_bench": 7,
   "orgs_with_midterm": 42,
   "meti_items": 57
  },
@@ -1860,245 +1860,6 @@
    }
   },
   {
-   "key": "preferrednetworks",
-   "name": "株式会社 Preferred Networks",
-   "awards": [
-    {
-     "program_id": "geniac-2",
-     "program": "ポスト5G情報通信システム基盤強化研究開発事業／ポスト5G情報通信システムの開発（助成）（g3）競争力ある生成AI基盤モデルの開発",
-     "agency": "NEDO",
-     "geniac_round": "第2期",
-     "award_date": "2024年10月10日",
-     "theme": "世界最大規模の高品質データセットの構築およびそれを用いた大規模言語モデルの開発",
-     "role": "共同",
-     "source_title": "「ポスト5G情報通信システム基盤強化研究開発事業／ポスト5G情報通信システムの開発（助成）」に係る実施体制の決定について",
-     "source_url": "https://www.nedo.go.jp/koubo/IT3_100331.html"
-    },
-    {
-     "program_id": "geniac-3",
-     "program": "ポスト5G情報通信システム基盤強化研究開発事業／競争力ある生成AI基盤モデルの開発（GENIAC）",
-     "agency": "NEDO",
-     "geniac_round": "第3期",
-     "award_date": "2025年7月15日",
-     "theme": "自律稼働デバイスに向けた高精度軽量 VLM の開発",
-     "role": "代表",
-     "source_title": "「ポスト5G情報通信システム基盤強化研究開発事業／競争力ある生成AI基盤モデルの開発（GENIAC）」に係る実施体制の決定について",
-     "source_url": "https://www.nedo.go.jp/koubo/CD3_100397.html"
-    },
-    {
-     "program_id": "geniac-4-model",
-     "program": "ポスト5G情報通信システム基盤強化研究開発事業／競争力ある生成AI基盤モデルの開発（GENIAC）〔(g3)領域特化生成AI基盤モデルの開発（GENIAC）〕",
-     "agency": "NEDO",
-     "geniac_round": "第4期（領域特化モデル開発）",
-     "award_date": "2026年6月4日",
-     "theme": "現実世界の再現を目指す材料基盤モデルの研究開発",
-     "role": "代表",
-     "source_title": "「ポスト5G情報通信システム基盤強化研究開発事業／競争力ある生成AI基盤モデルの開発（GENIAC）」の実施体制の決定について",
-     "source_url": "https://www.nedo.go.jp/koubo/CD3_100421.html"
-    },
-    {
-     "program_id": "geniac-4-robot-2",
-     "program": "ポスト5G情報通信システム基盤強化研究開発事業／ロボット基盤モデルの研究開発（GENIAC）（補助）（多用途ロボット等を含む）",
-     "agency": "NEDO",
-     "geniac_round": "第4期（ロボット基盤モデル・多用途ロボット等）",
-     "award_date": "2026年9月9日",
-     "theme": "環境高度理解基盤モデルの開発と屋内移動ロボット業務への適用",
-     "role": "",
-     "source_title": "「ポスト5G情報通信システム基盤強化研究開発事業／ロボット基盤モデルの研究開発（GENIAC）（補助）」（多用途ロボット等を含む）の実施体制の決定について",
-     "source_url": "https://www.nedo.go.jp/koubo/CD3_100434.html"
-    }
-   ],
-   "since": "2024-10-10",
-   "hf_models": [
-    {
-     "kind": "model",
-     "id": "pfnet/plamo-2-1b",
-     "url": "https://huggingface.co/pfnet/plamo-2-1b",
-     "downloads_30d": 1530,
-     "downloads_all": 646098,
-     "likes": 40,
-     "created": "2025-02-05",
-     "license": "apache-2.0",
-     "gated": false,
-     "pipeline": "text-generation",
-     "base_models": [],
-     "basis": {
-      "type": "meti",
-      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第2期 成果物（モデル・データセット）公開」",
-      "url": "https://geniac.meti.go.jp/selection_2/result_2/index.html",
-      "item": "PLaMo 2 1B"
-     },
-     "fetched": "2026-11-05",
-     "derived": 4,
-     "derived_other_authors": 4
-    },
-    {
-     "kind": "model",
-     "id": "pfnet/plamo-2.1-2b-vl",
-     "url": "https://huggingface.co/pfnet/plamo-2.1-2b-vl",
-     "downloads_30d": 56524,
-     "downloads_all": 62134,
-     "likes": 4,
-     "created": "2026-03-31",
-     "license": "other",
-     "gated": false,
-     "pipeline": "image-text-to-text",
-     "base_models": [
-      "google/siglip2-so400m-patch14-384",
-      "pfnet/plamo-2.1-2b-cpt"
-     ],
-     "basis": {
-      "type": "meti",
-      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第3期 成果物（モデル・データセット）公開」",
-      "url": "https://geniac.meti.go.jp/selection_3/result_3/index.html",
-      "item": "自律稼働デバイス向け高精度軽量VLM「PLaMo 2.1-8B-VL」"
-     },
-     "fetched": "2026-11-05",
-     "derived": 3,
-     "derived_other_authors": 3
-    },
-    {
-     "kind": "model",
-     "id": "pfnet/plamo-2.1-8b-vl",
-     "url": "https://huggingface.co/pfnet/plamo-2.1-8b-vl",
-     "downloads_30d": 576,
-     "downloads_all": 13217,
-     "likes": 9,
-     "created": "2026-03-31",
-     "license": "other",
-     "gated": false,
-     "pipeline": "image-text-to-text",
-     "base_models": [
-      "google/siglip2-so400m-patch14-384",
-      "pfnet/plamo-2.1-8b-cpt"
-     ],
-     "basis": {
-      "type": "meti",
-      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第3期 成果物（モデル・データセット）公開」",
-      "url": "https://geniac.meti.go.jp/selection_3/result_3/index.html",
-      "item": "自律稼働デバイス向け高精度軽量VLM「PLaMo 2.1-8B-VL」"
-     },
-     "fetched": "2026-11-05",
-     "derived": 3,
-     "derived_other_authors": 3
-    },
-    {
-     "kind": "model",
-     "id": "pfnet/plamo-2-8b",
-     "url": "https://huggingface.co/pfnet/plamo-2-8b",
-     "downloads_30d": 14,
-     "downloads_all": 6099,
-     "likes": 29,
-     "created": "2025-02-07",
-     "license": "other",
-     "gated": "auto",
-     "pipeline": "text-generation",
-     "base_models": [],
-     "basis": {
-      "type": "meti",
-      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第2期 成果物（モデル・データセット）公開」",
-      "url": "https://geniac.meti.go.jp/selection_2/result_2/index.html",
-      "item": "PLaMo 2 8B"
-     },
-     "fetched": "2026-11-05",
-     "derived": 9,
-     "derived_other_authors": 6
-    }
-   ],
-   "hf_datasets": [],
-   "other_outputs": [
-    {
-     "name": "Ja-Ref-L4",
-     "section": "評価用データセット",
-     "license": "GitHub公開（Public repository）。ライセンスは CC BY-NC 4.0。ただし、元の Ref-L4本体および画像はそれぞれのライセンスに従う。",
-     "links": [
-      "https://github.com/pfnet-research/Ja-Ref-L4"
-     ],
-     "source_title": "経済産業省 GENIAC「生成AI基盤モデル開発 第3期 成果物（モデル・データセット）公開」",
-     "source_url": "https://geniac.meti.go.jp/selection_3/result_3/index.html"
-    }
-   ],
-   "hf_account_note": null,
-   "institution": {
-    "ror": "https://ror.org/05xeefy56",
-    "ror_names": [
-     "Preferred Networks",
-     "Preferred Networks (Japan)",
-     "Preferred Networks, Inc.",
-     "株式会社Preferred Networks"
-    ],
-    "query": "Preferred Networks",
-    "how": "ROR affiliation 照合（chosen）",
-    "openalex": "I4210166566",
-    "display_name": "Preferred Networks (Japan)"
-   },
-   "papers_inst": {
-    "since": "2024-10-10",
-    "count": 14,
-    "cited_sum": 20,
-    "cited_sum_partial": null,
-    "counted": 14,
-    "top": [
-     {
-      "title": "OptunaHub: A Platform for Black-Box Optimization",
-      "date": "2025-10-03",
-      "cited": 13,
-      "url": "https://doi.org/10.48550/arxiv.2510.02798"
-     },
-     {
-      "title": "Parameter-free dynamic fidelity selection for automated machine learning",
-      "date": "2025-01-15",
-      "cited": 2,
-      "url": "https://doi.org/10.1016/j.asoc.2025.112750"
-     },
-     {
-      "title": "Tree-Structured Parzen Estimator Can Solve Black-Box Combinatorial Optimization More Efficiently",
-      "date": "2025-07-10",
-      "cited": 2,
-      "url": "https://doi.org/10.48550/arxiv.2507.08053"
-     }
-    ],
-    "query_url": "https://api.openalex.org/works?filter=authorships.institutions.id:I4210166566,from_publication_date:2024-10-10,primary_topic.subfield.id:1702|1707,type:article|preprint|review|book-chapter",
-    "fetched": "2026-11-05"
-   },
-   "papers_grant": [],
-   "benchmarks": [
-    {
-     "org_key": "preferrednetworks",
-     "model": "自律稼働デバイス向け高精度軽量VLM「PLaMo 2.1-8B-VL」",
-     "text": "VQAとVisual Groundingを基本性能として重視し、VQAベンチマーク JA-VG-VQA-500 とVisual Groundingベンチマーク Ref-L4（英語・日本語） において、同規模の強力なオープンモデル（Asagi-14B、Qwen2.5-VL-7B、Qwen3-VL-8B）を上回るスコアを達成。",
-     "kind": "quote",
-     "source_title": "経済産業省 GENIAC「生成AI基盤モデル開発 第3期 成果物（モデル・データセット）公開」「特徴」欄（事業者による記載）",
-     "source_url": "https://geniac.meti.go.jp/selection_3/result_3/index.html",
-     "as_of": "公開ページの記載（取得 2026-11-05）"
-    }
-   ],
-   "midterm": [
-    {
-     "status": "目標達成",
-     "end": "令和7年度終了予定",
-     "page": 44,
-     "program_id": "geniac-2",
-     "theme": "世界最大規模の高品質データセットの構築およびそれを用いた大規模言語モデルの開発"
-    },
-    {
-     "status": "計画通り",
-     "end": "令和7年度終了予定",
-     "page": 44,
-     "program_id": "geniac-3",
-     "theme": "自律稼働デバイスに向けた高精度軽量 VLM の開発"
-    }
-   ],
-   "amount": "公表資料では確認できなかった",
-   "has": {
-    "models": 4,
-    "datasets": 0,
-    "papers_grant": 0,
-    "papers_inst": 14,
-    "bench": 1
-   }
-  },
-  {
    "key": "カラクリ",
    "name": "カラクリ株式会社",
    "awards": [
@@ -2439,6 +2200,235 @@
     "datasets": 0,
     "papers_grant": 0,
     "papers_inst": null,
+    "bench": 0
+   }
+  },
+  {
+   "key": "preferrednetworks",
+   "name": "株式会社 Preferred Networks",
+   "awards": [
+    {
+     "program_id": "geniac-2",
+     "program": "ポスト5G情報通信システム基盤強化研究開発事業／ポスト5G情報通信システムの開発（助成）（g3）競争力ある生成AI基盤モデルの開発",
+     "agency": "NEDO",
+     "geniac_round": "第2期",
+     "award_date": "2024年10月10日",
+     "theme": "世界最大規模の高品質データセットの構築およびそれを用いた大規模言語モデルの開発",
+     "role": "共同",
+     "source_title": "「ポスト5G情報通信システム基盤強化研究開発事業／ポスト5G情報通信システムの開発（助成）」に係る実施体制の決定について",
+     "source_url": "https://www.nedo.go.jp/koubo/IT3_100331.html"
+    },
+    {
+     "program_id": "geniac-3",
+     "program": "ポスト5G情報通信システム基盤強化研究開発事業／競争力ある生成AI基盤モデルの開発（GENIAC）",
+     "agency": "NEDO",
+     "geniac_round": "第3期",
+     "award_date": "2025年7月15日",
+     "theme": "自律稼働デバイスに向けた高精度軽量 VLM の開発",
+     "role": "代表",
+     "source_title": "「ポスト5G情報通信システム基盤強化研究開発事業／競争力ある生成AI基盤モデルの開発（GENIAC）」に係る実施体制の決定について",
+     "source_url": "https://www.nedo.go.jp/koubo/CD3_100397.html"
+    },
+    {
+     "program_id": "geniac-4-model",
+     "program": "ポスト5G情報通信システム基盤強化研究開発事業／競争力ある生成AI基盤モデルの開発（GENIAC）〔(g3)領域特化生成AI基盤モデルの開発（GENIAC）〕",
+     "agency": "NEDO",
+     "geniac_round": "第4期（領域特化モデル開発）",
+     "award_date": "2026年6月4日",
+     "theme": "現実世界の再現を目指す材料基盤モデルの研究開発",
+     "role": "代表",
+     "source_title": "「ポスト5G情報通信システム基盤強化研究開発事業／競争力ある生成AI基盤モデルの開発（GENIAC）」の実施体制の決定について",
+     "source_url": "https://www.nedo.go.jp/koubo/CD3_100421.html"
+    },
+    {
+     "program_id": "geniac-4-robot-2",
+     "program": "ポスト5G情報通信システム基盤強化研究開発事業／ロボット基盤モデルの研究開発（GENIAC）（補助）（多用途ロボット等を含む）",
+     "agency": "NEDO",
+     "geniac_round": "第4期（ロボット基盤モデル・多用途ロボット等）",
+     "award_date": "2026年9月9日",
+     "theme": "環境高度理解基盤モデルの開発と屋内移動ロボット業務への適用",
+     "role": "",
+     "source_title": "「ポスト5G情報通信システム基盤強化研究開発事業／ロボット基盤モデルの研究開発（GENIAC）（補助）」（多用途ロボット等を含む）の実施体制の決定について",
+     "source_url": "https://www.nedo.go.jp/koubo/CD3_100434.html"
+    }
+   ],
+   "since": "2024-10-10",
+   "hf_models": [
+    {
+     "kind": "model",
+     "id": "pfnet/plamo-2-1b",
+     "url": "https://huggingface.co/pfnet/plamo-2-1b",
+     "downloads_30d": 1530,
+     "downloads_all": 646098,
+     "likes": 40,
+     "created": "2025-02-05",
+     "license": "apache-2.0",
+     "gated": false,
+     "pipeline": "text-generation",
+     "base_models": [],
+     "basis": {
+      "type": "meti",
+      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第2期 成果物（モデル・データセット）公開」",
+      "url": "https://geniac.meti.go.jp/selection_2/result_2/index.html",
+      "item": "PLaMo 2 1B"
+     },
+     "fetched": "2026-11-05",
+     "derived": 4,
+     "derived_other_authors": 4
+    },
+    {
+     "kind": "model",
+     "id": "pfnet/plamo-2.1-2b-vl",
+     "url": "https://huggingface.co/pfnet/plamo-2.1-2b-vl",
+     "downloads_30d": 56524,
+     "downloads_all": 62134,
+     "likes": 4,
+     "created": "2026-03-31",
+     "license": "other",
+     "gated": false,
+     "pipeline": "image-text-to-text",
+     "base_models": [
+      "google/siglip2-so400m-patch14-384",
+      "pfnet/plamo-2.1-2b-cpt"
+     ],
+     "basis": {
+      "type": "meti",
+      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第3期 成果物（モデル・データセット）公開」",
+      "url": "https://geniac.meti.go.jp/selection_3/result_3/index.html",
+      "item": "自律稼働デバイス向け高精度軽量VLM「PLaMo 2.1-8B-VL」"
+     },
+     "fetched": "2026-11-05",
+     "derived": 3,
+     "derived_other_authors": 3
+    },
+    {
+     "kind": "model",
+     "id": "pfnet/plamo-2.1-8b-vl",
+     "url": "https://huggingface.co/pfnet/plamo-2.1-8b-vl",
+     "downloads_30d": 576,
+     "downloads_all": 13217,
+     "likes": 9,
+     "created": "2026-03-31",
+     "license": "other",
+     "gated": false,
+     "pipeline": "image-text-to-text",
+     "base_models": [
+      "google/siglip2-so400m-patch14-384",
+      "pfnet/plamo-2.1-8b-cpt"
+     ],
+     "basis": {
+      "type": "meti",
+      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第3期 成果物（モデル・データセット）公開」",
+      "url": "https://geniac.meti.go.jp/selection_3/result_3/index.html",
+      "item": "自律稼働デバイス向け高精度軽量VLM「PLaMo 2.1-8B-VL」"
+     },
+     "fetched": "2026-11-05",
+     "derived": 3,
+     "derived_other_authors": 3
+    },
+    {
+     "kind": "model",
+     "id": "pfnet/plamo-2-8b",
+     "url": "https://huggingface.co/pfnet/plamo-2-8b",
+     "downloads_30d": 14,
+     "downloads_all": 6099,
+     "likes": 29,
+     "created": "2025-02-07",
+     "license": "other",
+     "gated": "auto",
+     "pipeline": "text-generation",
+     "base_models": [],
+     "basis": {
+      "type": "meti",
+      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第2期 成果物（モデル・データセット）公開」",
+      "url": "https://geniac.meti.go.jp/selection_2/result_2/index.html",
+      "item": "PLaMo 2 8B"
+     },
+     "fetched": "2026-11-05",
+     "derived": 9,
+     "derived_other_authors": 6
+    }
+   ],
+   "hf_datasets": [],
+   "other_outputs": [
+    {
+     "name": "Ja-Ref-L4",
+     "section": "評価用データセット",
+     "license": "GitHub公開（Public repository）。ライセンスは CC BY-NC 4.0。ただし、元の Ref-L4本体および画像はそれぞれのライセンスに従う。",
+     "links": [
+      "https://github.com/pfnet-research/Ja-Ref-L4"
+     ],
+     "source_title": "経済産業省 GENIAC「生成AI基盤モデル開発 第3期 成果物（モデル・データセット）公開」",
+     "source_url": "https://geniac.meti.go.jp/selection_3/result_3/index.html"
+    }
+   ],
+   "hf_account_note": null,
+   "institution": {
+    "ror": "https://ror.org/05xeefy56",
+    "ror_names": [
+     "Preferred Networks",
+     "Preferred Networks (Japan)",
+     "Preferred Networks, Inc.",
+     "株式会社Preferred Networks"
+    ],
+    "query": "Preferred Networks",
+    "how": "ROR affiliation 照合（chosen）",
+    "openalex": "I4210166566",
+    "display_name": "Preferred Networks (Japan)"
+   },
+   "papers_inst": {
+    "since": "2024-10-10",
+    "count": 14,
+    "cited_sum": 20,
+    "cited_sum_partial": null,
+    "counted": 14,
+    "top": [
+     {
+      "title": "OptunaHub: A Platform for Black-Box Optimization",
+      "date": "2025-10-03",
+      "cited": 13,
+      "url": "https://doi.org/10.48550/arxiv.2510.02798"
+     },
+     {
+      "title": "Parameter-free dynamic fidelity selection for automated machine learning",
+      "date": "2025-01-15",
+      "cited": 2,
+      "url": "https://doi.org/10.1016/j.asoc.2025.112750"
+     },
+     {
+      "title": "Tree-Structured Parzen Estimator Can Solve Black-Box Combinatorial Optimization More Efficiently",
+      "date": "2025-07-10",
+      "cited": 2,
+      "url": "https://doi.org/10.48550/arxiv.2507.08053"
+     }
+    ],
+    "query_url": "https://api.openalex.org/works?filter=authorships.institutions.id:I4210166566,from_publication_date:2024-10-10,primary_topic.subfield.id:1702|1707,type:article|preprint|review|book-chapter",
+    "fetched": "2026-11-05"
+   },
+   "papers_grant": [],
+   "benchmarks": [],
+   "midterm": [
+    {
+     "status": "目標達成",
+     "end": "令和7年度終了予定",
+     "page": 44,
+     "program_id": "geniac-2",
+     "theme": "世界最大規模の高品質データセットの構築およびそれを用いた大規模言語モデルの開発"
+    },
+    {
+     "status": "計画通り",
+     "end": "令和7年度終了予定",
+     "page": 44,
+     "program_id": "geniac-3",
+     "theme": "自律稼働デバイスに向けた高精度軽量 VLM の開発"
+    }
+   ],
+   "amount": "公表資料では確認できなかった",
+   "has": {
+    "models": 4,
+    "datasets": 0,
+    "papers_grant": 0,
+    "papers_inst": 14,
     "bench": 0
    }
   },
@@ -3001,6 +2991,96 @@
    }
   },
   {
+   "key": "データグリッド",
+   "name": "株式会社データグリッド",
+   "awards": [
+    {
+     "program_id": "geniac-2",
+     "program": "ポスト5G情報通信システム基盤強化研究開発事業／ポスト5G情報通信システムの開発（助成）（g3）競争力ある生成AI基盤モデルの開発",
+     "agency": "NEDO",
+     "geniac_round": "第2期",
+     "award_date": "2024年10月10日",
+     "theme": "ユーザー意図を反映する選択的編集能力を備えたVision 系基盤モデルの開発",
+     "role": "代表",
+     "source_title": "「ポスト5G情報通信システム基盤強化研究開発事業／ポスト5G情報通信システムの開発（助成）」に係る実施体制の決定について",
+     "source_url": "https://www.nedo.go.jp/koubo/IT3_100331.html"
+    }
+   ],
+   "since": "2024-10-10",
+   "hf_models": [
+    {
+     "kind": "model",
+     "id": "DATAGRID-research/DATAGRID-Local-Attention-DiT-v1.0.0-0.52B",
+     "url": "https://huggingface.co/DATAGRID-research/DATAGRID-Local-Attention-DiT-v1.0.0-0.52B",
+     "downloads_30d": 20,
+     "downloads_all": 265,
+     "likes": 3,
+     "created": "2025-05-12",
+     "license": null,
+     "gated": false,
+     "pipeline": "text-to-image",
+     "base_models": [],
+     "basis": {
+      "type": "meti",
+      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第2期 成果物（モデル・データセット）公開」",
+      "url": "https://geniac.meti.go.jp/selection_2/result_2/index.html",
+      "item": "DATAGRID-Local-Attention-DiT-v1.0.0-0.52B"
+     },
+     "fetched": "2026-11-05",
+     "derived": 0,
+     "derived_other_authors": 0
+    },
+    {
+     "kind": "model",
+     "id": "DATAGRID-research/DATAGRID-Open-Sora-Plan-v1.3.0-0.16M",
+     "url": "https://huggingface.co/DATAGRID-research/DATAGRID-Open-Sora-Plan-v1.3.0-0.16M",
+     "downloads_30d": 0,
+     "downloads_all": 0,
+     "likes": 1,
+     "created": "2025-05-14",
+     "license": "apache-2.0",
+     "gated": false,
+     "pipeline": null,
+     "base_models": [
+      "LanguageBind/Open-Sora-Plan-v1.3.0"
+     ],
+     "basis": {
+      "type": "meti",
+      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第2期 成果物（モデル・データセット）公開」",
+      "url": "https://geniac.meti.go.jp/selection_2/result_2/index.html",
+      "item": "DATAGRID-Open-Sora-Plan-v1.3.0-0.16M"
+     },
+     "fetched": "2026-11-05",
+     "derived": 0,
+     "derived_other_authors": 0
+    }
+   ],
+   "hf_datasets": [],
+   "other_outputs": [],
+   "hf_account_note": null,
+   "institution": null,
+   "papers_inst": null,
+   "papers_grant": [],
+   "benchmarks": [],
+   "midterm": [
+    {
+     "status": "目標達成",
+     "end": "令和7年度終了予定",
+     "page": 44,
+     "program_id": "geniac-2",
+     "theme": "ユーザー意図を反映する選択的編集能力を備えたVision 系基盤モデルの開発"
+    }
+   ],
+   "amount": "公表資料では確認できなかった",
+   "has": {
+    "models": 2,
+    "datasets": 0,
+    "papers_grant": 0,
+    "papers_inst": null,
+    "bench": 0
+   }
+  },
+  {
    "key": "onestruction",
    "name": "ＯＮＥＳＴＲＵＣＴＩＯＮ株式会社",
    "awards": [
@@ -3099,17 +3179,7 @@
     "fetched": "2026-11-05"
    },
    "papers_grant": [],
-   "benchmarks": [
-    {
-     "org_key": "onestruction",
-     "model": "Ishigaki-IDS-8B",
-     "text": "BIMの国際標準化団体が公開するツールをもとに独自に構築したIDS-Benchにおいて、フロンティアモデルであるGemini3.1-Pro-Preview、GPT-5.3-codex（medium）を上回るスコアを達成。",
-     "kind": "quote",
-     "source_title": "経済産業省 GENIAC「生成AI基盤モデル開発 第3期 成果物（モデル・データセット）公開」「特徴」欄（事業者による記載）",
-     "source_url": "https://geniac.meti.go.jp/selection_3/result_3/index.html",
-     "as_of": "公開ページの記載（取得 2026-11-05）"
-    }
-   ],
+   "benchmarks": [],
    "midterm": [
     {
      "status": "計画通り",
@@ -3125,96 +3195,6 @@
     "datasets": 1,
     "papers_grant": 0,
     "papers_inst": 0,
-    "bench": 1
-   }
-  },
-  {
-   "key": "データグリッド",
-   "name": "株式会社データグリッド",
-   "awards": [
-    {
-     "program_id": "geniac-2",
-     "program": "ポスト5G情報通信システム基盤強化研究開発事業／ポスト5G情報通信システムの開発（助成）（g3）競争力ある生成AI基盤モデルの開発",
-     "agency": "NEDO",
-     "geniac_round": "第2期",
-     "award_date": "2024年10月10日",
-     "theme": "ユーザー意図を反映する選択的編集能力を備えたVision 系基盤モデルの開発",
-     "role": "代表",
-     "source_title": "「ポスト5G情報通信システム基盤強化研究開発事業／ポスト5G情報通信システムの開発（助成）」に係る実施体制の決定について",
-     "source_url": "https://www.nedo.go.jp/koubo/IT3_100331.html"
-    }
-   ],
-   "since": "2024-10-10",
-   "hf_models": [
-    {
-     "kind": "model",
-     "id": "DATAGRID-research/DATAGRID-Local-Attention-DiT-v1.0.0-0.52B",
-     "url": "https://huggingface.co/DATAGRID-research/DATAGRID-Local-Attention-DiT-v1.0.0-0.52B",
-     "downloads_30d": 20,
-     "downloads_all": 265,
-     "likes": 3,
-     "created": "2025-05-12",
-     "license": null,
-     "gated": false,
-     "pipeline": "text-to-image",
-     "base_models": [],
-     "basis": {
-      "type": "meti",
-      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第2期 成果物（モデル・データセット）公開」",
-      "url": "https://geniac.meti.go.jp/selection_2/result_2/index.html",
-      "item": "DATAGRID-Local-Attention-DiT-v1.0.0-0.52B"
-     },
-     "fetched": "2026-11-05",
-     "derived": 0,
-     "derived_other_authors": 0
-    },
-    {
-     "kind": "model",
-     "id": "DATAGRID-research/DATAGRID-Open-Sora-Plan-v1.3.0-0.16M",
-     "url": "https://huggingface.co/DATAGRID-research/DATAGRID-Open-Sora-Plan-v1.3.0-0.16M",
-     "downloads_30d": 0,
-     "downloads_all": 0,
-     "likes": 1,
-     "created": "2025-05-14",
-     "license": "apache-2.0",
-     "gated": false,
-     "pipeline": null,
-     "base_models": [
-      "LanguageBind/Open-Sora-Plan-v1.3.0"
-     ],
-     "basis": {
-      "type": "meti",
-      "title": "経済産業省 GENIAC「生成AI基盤モデル開発 第2期 成果物（モデル・データセット）公開」",
-      "url": "https://geniac.meti.go.jp/selection_2/result_2/index.html",
-      "item": "DATAGRID-Open-Sora-Plan-v1.3.0-0.16M"
-     },
-     "fetched": "2026-11-05",
-     "derived": 0,
-     "derived_other_authors": 0
-    }
-   ],
-   "hf_datasets": [],
-   "other_outputs": [],
-   "hf_account_note": null,
-   "institution": null,
-   "papers_inst": null,
-   "papers_grant": [],
-   "benchmarks": [],
-   "midterm": [
-    {
-     "status": "目標達成",
-     "end": "令和7年度終了予定",
-     "page": 44,
-     "program_id": "geniac-2",
-     "theme": "ユーザー意図を反映する選択的編集能力を備えたVision 系基盤モデルの開発"
-    }
-   ],
-   "amount": "公表資料では確認できなかった",
-   "has": {
-    "models": 2,
-    "datasets": 0,
-    "papers_grant": 0,
-    "papers_inst": null,
     "bench": 0
    }
   },

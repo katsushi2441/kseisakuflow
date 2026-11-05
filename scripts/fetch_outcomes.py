@@ -234,7 +234,8 @@ def bench_sentences(text):
     out = []
     for s in re.split(r'(?<=[。．])', text or ''):
         s = s.strip()
-        if s and BENCH_RX.search(s) and re.search(r'\d+\.\d+', s):
+        # 「Qwen2.5-VL」のようなモデル名の中の数字は値として数えない（英字・ハイフンに挟まれた数字は除く）
+        if s and BENCH_RX.search(s) and re.search(r'(?<![A-Za-z0-9.\-])\d+\.\d+(?![A-Za-z0-9\-])', s):
             out.append(s)
     return out
 
