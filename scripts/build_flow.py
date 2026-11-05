@@ -356,7 +356,8 @@ def main():
     linked_prog = attach_awards(projects, field, awards)
     attach_kokkai(projects, field)
     ov = overlaps(projects, councils, awards, linked_prog)
-    pov = person_overlaps(councils, awards, linked_prog)
+    # 個人名の突き合わせは載せない（2026-11-05 ユーザー了承: 個人に疑いをかけたように受け取られるおそれ。組織名の重なりだけ残す）
+    pov = []
     for p in projects.values():
         p['stages'] = stage_count(p)
     plist = sorted(projects.values(), key=lambda p: (-p['stages'], -(len(p['programs']) > 0), -(len(p['council_refs']) > 0),
