@@ -370,6 +370,11 @@ def main():
         'projects_2025': sum(p['sheet'] == '2025' for p in projects.values()), 'projects_2024only': sum(p['sheet'] == '2024' for p in projects.values()),
         'initial_2025': ysum('initial', '2025'), 'initial_2025_name': ysum('initial', '2025', 'name'),
         'current_2024': ysum('current', '2024'), 'exec_2024': ysum('exec', '2024'),
+        'initial_2024': ysum('initial', '2024'), 'supp_2024': ysum('supplementary', '2024'), 'carried_2024': ysum('carried_in', '2024'),
+        'top_exec_2024': [{'id': p['id'], 'name': p['name'], 'supp': next((b['supplementary'] or 0 for b in p['budget'] if b['year'] == '2024'), 0),
+                           'exec': next((b['exec'] or 0 for b in p['budget'] if b['year'] == '2024'), 0)}
+                          for p in sorted([p for p in projects.values() if p['sheet'] == '2025'],
+                                          key=lambda p: -next((b['exec'] or 0 for b in p['budget'] if b['year'] == '2024'), 0))[:3]],
         'current_2024_name': ysum('current', '2024', 'name'), 'exec_2024_name': ysum('exec', '2024', 'name'),
         'payee_rows': sum(len(p['payees']) for p in projects.values()),
         'with_council_ref': sum(bool(p['council_refs']) for p in projects.values()),
