@@ -181,6 +181,90 @@
     "点検",
     "国会"
    ]
+  },
+  {
+   "slug": "iryo-fukushi-yushi",
+   "name": "医療・福祉の資金繰り支援（コロナ融資→物価高騰融資）",
+   "title": "Kurage 政策の流れトラッカー｜医療・福祉の資金繰り支援（コロナ融資→物価高騰融資）",
+   "lead": "新型コロナの影響を受けた病院や福祉施設には、独立行政法人福祉医療機構が無利子・無担保の貸付け（コロナ貸付け）を行い、2025年からは物価高騰の影響を受けた施設への優遇融資が続いています。その事業の根拠になった計画、予算、支出先、目標と実績、点検、会計検査院の検査、国会の質疑を、公開されている資料だけでつないで並べます。事業や組織の評価はしません。出すのは公表資料の記載と、その出典だけです。",
+   "generated_at": "2026-11-06",
+   "summary": {
+    "projects": 3,
+    "projects_name": 3,
+    "projects_body": 0,
+    "projects_2025": 3,
+    "projects_2024only": 0,
+    "initial_2025": 6022200000,
+    "initial_2025_name": 6022200000,
+    "current_2025": 97841582000,
+    "current_2025_name": 97841582000,
+    "current_2024": 7231557000,
+    "exec_2024": 7231557000,
+    "initial_2024": 5570778000,
+    "supp_2024": 1660779000,
+    "carried_2024": 0,
+    "top_exec_2024": [
+     {
+      "id": "2751",
+      "name": "独立行政法人福祉医療機構運営費交付金",
+      "supp": 1660779000,
+      "exec": 4526043000
+     },
+     {
+      "id": "2743",
+      "name": "社会福祉事業施設等貸付事業利子補給金",
+      "supp": 0,
+      "exec": 2705514000
+     },
+     {
+      "id": "22137",
+      "name": "独立行政法人福祉医療機構出資金",
+      "supp": 0,
+      "exec": 0
+     }
+    ],
+    "current_2024_name": 7231557000,
+    "exec_2024_name": 7231557000,
+    "payee_rows": 12,
+    "with_council_ref": 0,
+    "with_programs": 0,
+    "with_ext_review": 0,
+    "with_review": 2,
+    "with_kokkai": 3,
+    "with_plans": 2,
+    "programs": 0,
+    "award_rows": 0,
+    "evaluations": 0,
+    "overlaps": 0,
+    "person_overlaps": 0,
+    "councils": 0,
+    "meetings": 0,
+    "outputs": 0,
+    "members": 0
+   },
+   "trackers": [
+    "corona-yushi",
+    "iryo-shohizei",
+    "shogai-fukushi-bukka",
+    "kaigo-shogu"
+   ],
+   "ui": {
+    "topic": "医療・福祉の資金繰り支援",
+    "policy": "plans",
+    "budget": "current",
+    "kokkai_examples": "福祉医療機構 コロナ、福祉医療機構 融資",
+    "match_scope": "事業名",
+    "plan_example": "独立行政法人福祉医療機構中期計画"
+   },
+   "card_line2": "コロナ融資から物価高騰融資へ、予算と回収はどうなったか。",
+   "card_sub1": "根拠の計画・予算・支出先・点検・会計検査院・国会を1本に。",
+   "card_sub2": "行政事業レビューと国会会議録を、出典つきで。",
+   "card_steps": [
+    "計画",
+    "予算",
+    "検査",
+    "国会"
+   ]
   }
  ]
 }

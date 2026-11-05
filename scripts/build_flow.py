@@ -372,6 +372,7 @@ def main():
         'projects_body': sum(p['tier'] == 'body' for p in projects.values()),
         'projects_2025': sum(p['sheet'] == '2025' for p in projects.values()), 'projects_2024only': sum(p['sheet'] == '2024' for p in projects.values()),
         'initial_2025': ysum('initial', '2025'), 'initial_2025_name': ysum('initial', '2025', 'name'),
+        'current_2025': ysum('current', '2025'), 'current_2025_name': ysum('current', '2025', 'name'),   # 当初＋補正＋繰越（補正が中心の事業がある分野用・ui.budget=current）
         'current_2024': ysum('current', '2024'), 'exec_2024': ysum('exec', '2024'),
         'initial_2024': ysum('initial', '2024'), 'supp_2024': ysum('supplementary', '2024'), 'carried_2024': ysum('carried_in', '2024'),
         'top_exec_2024': [{'id': p['id'], 'name': p['name'], 'supp': next((b['supplementary'] or 0 for b in p['budget'] if b['year'] == '2024'), 0),
@@ -393,7 +394,7 @@ def main():
         'outputs': len({o['url'] for c in councils['councils'] for o in (c.get('outputs') or []) if o.get('url')}),
         'members': len({N(m['name']) for c in councils['councils'] for r in (c.get('rosters') or []) for m in (r.get('members') or [])}),
     }
-    out = {'field': {**{k: field[k] for k in ('slug', 'name', 'title', 'lead')}, 'ui': field.get('ui', {})}, 'words_label': field['rs_match']['words_label'],
+    out = {'field': {**{k: field[k] for k in ('slug', 'name', 'title', 'lead')}, 'ui': field.get('ui', {}), 'audit': field.get('audit', [])}, 'words_label': field['rs_match']['words_label'],
            'generated_at': TODAY, 'summary': summary,
            'councils': councils['councils'], 'councils_meta': {k: councils.get(k) for k in ('fetched_at', 'source_note', 'scope_note')},
            'programs': awards['programs'], 'evaluations': awards['evaluations'], 'evaluation_rules': awards.get('evaluation_rules'),
