@@ -26,6 +26,7 @@
 /usr/bin/python3 scripts/fetch_nedo.py build    # NEDO 等の採択・審査・評価 → data/awards.json
 /usr/bin/python3 scripts/index_cao_pages.py     # 会議資料を1ページずつ文字に → raw/cao_pages.jsonl
 /usr/bin/python3 scripts/fetch_kokkai.py ai     # 事業ごとの国会の発言（fields/ai.json の kokkai_terms）
+/usr/bin/python3 scripts/fetch_outcomes.py all   # 採択先ごとの成果 → data/outcomes.json（下の「採択先の成果」）
 # 2. 分野のデータ（--copy で xb4g/giin/data/flow/ へ写す）
 /usr/bin/python3 scripts/build_flow.py ai --copy
 /usr/bin/python3 scripts/build_koho.py koho --copy
@@ -33,6 +34,17 @@
 cd ../xb4g/giin && /usr/bin/python3 scripts/make_ogp_flow.py
 /usr/bin/python3 scripts/deploy.py --only lib/flow_pages.php lib/flow_koho.php data/flow img/og/flow.png img/og/flow-ai.png img/og/flow-koho.png
 ```
+
+## 採択先の成果（2026-11-05）
+
+採択先ごとに、公開モデル・データセット（Hugging Face 公開API）、論文（OpenAlex・ROR）、公表されたベンチマークの値、
+経済産業省の中間評価報告書（案）の進捗表の記載を並べる。画面は xb4g の lib/flow_outcomes.php（/flow/ai/outcomes と、分野・事業ページの節）。
+
+- 成果物の一覧は経済産業省 GENIAC の成果公開ページ（第2期・第3期）。Hugging Face のアカウントは、そのページか採択先の公式発表に載っているものだけ（data/outcome_sources.json の hf_accounts と根拠のURL）。アカウントの他のモデルは、モデルカードに GENIAC の記載があるものだけ。
+- 論文は OpenAlex の助成番号（awards.funder_award_id。JPNP20017 など）と、ROR で機関を確かめた採択先の機関全体のAI論文（主題 1702/1707）。P20017 は通信・半導体の公募も含むので、AI 分野と採択日以降で絞る。
+- ベンチマークは公表値だけ（第1期の性能評価の表は画像から転記・NII の発表・成果公開ページの「特徴」欄でベンチマーク名と数値の両方がある文）。自分で測らない。
+- 採択先ごとの配分額は公表資料で確認できない（RS の支出先は NEDO の基金1行）。資源効率は比べられないと画面に書く。
+- 応答のキャッシュは raw/outcomes/。取り直しは `--refresh`（OpenAlex は鍵なしだと1日の上限が共有なので連打しない）。
 
 ## 確かめ方
 

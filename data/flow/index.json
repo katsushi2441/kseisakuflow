@@ -55,7 +55,21 @@
     "councils": 6,
     "meetings": 36,
     "outputs": 7,
-    "members": 36
+    "members": 36,
+    "outcomes": {
+     "orgs": 108,
+     "orgs_with_hf": 19,
+     "orgs_with_models": 19,
+     "hf_models": 57,
+     "hf_datasets": 16,
+     "downloads_all": 2247377,
+     "derived": 1164,
+     "orgs_with_inst": 37,
+     "orgs_with_grant_papers": 8,
+     "orgs_with_bench": 9,
+     "orgs_with_midterm": 42,
+     "meti_items": 57
+    }
    },
    "trackers": [
     "ai-hou",

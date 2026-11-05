@@ -398,6 +398,15 @@ def main():
            'linked_programs': linked_prog, 'unlinked_programs_note': field.get('unlinked_programs_note', ''),
            'projects': plist, 'overlaps': ov, 'person_overlaps': pov, 'trackers': tracker_stats(field),
            'rs_sources': {y: {k: rs_source(y, k) for k in ('1-2_', '2-1_', '3-1_', '4-1_', '5-1_', '1-3_')} for y in field['rs_years']}}
+    # 採択先ごとの成果（scripts/fetch_outcomes.py が data/outcomes.json に書く）
+    oc_path = os.path.join(ROOT, field.get('outcomes_file', 'data/outcomes.json'))
+    if os.path.exists(oc_path):
+        oc = json.load(open(oc_path, encoding='utf-8'))
+        out['outcomes'] = oc
+        summary['outcomes'] = oc['summary']
+        for p in projects.values():
+            pr = set(p['programs'])
+            p['outcome_keys'] = [c['key'] for c in oc['cards'] if pr & {a['program_id'] for a in c['awards']}]
     os.makedirs(os.path.join(ROOT, 'data', 'flow'), exist_ok=True)
     dst = os.path.join(ROOT, 'data', 'flow', slug + '.json')
     json.dump(out, open(dst, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))

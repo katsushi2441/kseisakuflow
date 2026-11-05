@@ -1,0 +1,369 @@
+{
+ "_about": "fetch_outcomes.py の設定。Hugging Face のアカウントは、経済産業省 GENIAC の成果公開ページか採択先の公式発表に載っているものだけを書く（推測で当てない）。",
+ "hf_accounts": [
+  {
+   "org_key": "情報システム研究機構",
+   "account": "llm-jp",
+   "since": "2024-02-02",
+   "basis_title": "国立情報学研究所 ニュースリリース（2024年12月24日）が公開先として示す LLM-jp の公開ページ（https://llm-jp.nii.ac.jp/release）に huggingface.co/llm-jp へのリンク",
+   "basis_url": "https://llm-jp.nii.ac.jp/release"
+  },
+  {
+   "org_key": "東京大学",
+   "account": "weblab-GENIAC",
+   "since": "2024-02-02",
+   "basis_title": "東京大学大学院工学系研究科 プレスリリース（2024年8月30日）に huggingface.co/weblab-GENIAC へのリンク",
+   "basis_url": "https://www.t.u-tokyo.ac.jp/hubfs/press-release/2024/0830/003/text.pdf"
+  },
+  {
+   "org_key": "preferredelements",
+   "account": "pfnet",
+   "since": "2024-02-02",
+   "basis_title": "経済産業省 GENIAC 第2期 成果物公開ページ（事業者名「株式会社Preferred Networks／株式会社Preferred Elements」の公開リンクが huggingface.co/pfnet）",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html",
+   "org_keys": [
+    "preferredelements",
+    "preferrednetworks"
+   ]
+  },
+  {
+   "org_key": "abeja",
+   "account": "abeja",
+   "since": "2024-02-02",
+   "basis_title": "経済産業省 GENIAC 第2期・第3期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "ストックマーク",
+   "account": "stockmark",
+   "since": "2024-02-02",
+   "basis_title": "経済産業省 GENIAC 第2期・第3期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "turing",
+   "account": "turing-motors",
+   "since": "2024-02-02",
+   "basis_title": "経済産業省 GENIAC 第2期・第3期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "カラクリ",
+   "account": "karakuri-ai",
+   "since": "2024-10-10",
+   "basis_title": "経済産業省 GENIAC 第2期・第3期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "aidealab",
+   "account": "aidealab",
+   "since": "2024-10-10",
+   "basis_title": "経済産業省 GENIAC 第2期・第3期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "nablas",
+   "account": "nablasinc",
+   "since": "2024-10-10",
+   "basis_title": "経済産業省 GENIAC 第2期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "aihub",
+   "account": "aihub-geniac",
+   "since": "2024-10-10",
+   "basis_title": "経済産業省 GENIAC 第2期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "データグリッド",
+   "account": "DATAGRID-research",
+   "since": "2024-10-10",
+   "basis_title": "経済産業省 GENIAC 第2期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "ウーブンバイトヨタ",
+   "account": "wovenbytoyota-vai",
+   "since": "2024-10-10",
+   "basis_title": "経済産業省 GENIAC 第2期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "リコー",
+   "account": "r-g2-2024",
+   "since": "2024-10-10",
+   "basis_title": "経済産業省 GENIAC 第2期 成果物公開ページの公開リンク（事業者名 株式会社リコー）",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "リコー",
+   "account": "ricoh-ai",
+   "since": "2024-10-10",
+   "basis_title": "経済産業省 GENIAC 第3期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_3/result_3/index.html"
+  },
+  {
+   "org_key": "フューチャー",
+   "account": "future-architect",
+   "since": "2024-10-10",
+   "basis_title": "経済産業省 GENIAC 第2期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "eques",
+   "account": "EQUES",
+   "since": "2024-10-10",
+   "basis_title": "経済産業省 GENIAC 第2期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_2/result_2/index.html"
+  },
+  {
+   "org_key": "onestruction",
+   "account": "ONESTRUCTION",
+   "since": "2025-07-15",
+   "basis_title": "経済産業省 GENIAC 第3期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_3/result_3/index.html"
+  },
+  {
+   "org_key": "楽天グループ",
+   "account": "Rakuten",
+   "since": "2025-07-15",
+   "basis_title": "経済産業省 GENIAC 第3期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_3/result_3/index.html"
+  },
+  {
+   "org_key": "野村総合研究所",
+   "account": "nri-ai",
+   "since": "2025-07-15",
+   "basis_title": "経済産業省 GENIAC 第3期 成果物公開ページの公開リンク",
+   "basis_url": "https://geniac.meti.go.jp/selection_3/result_3/index.html"
+  }
+ ],
+ "hf_unverified": [
+  {
+   "org_key": "sakanaai",
+   "note": "GENIAC の成果として公開されたモデルの Hugging Face 上の場所は、経済産業省の成果公開ページと、確かめた公式発表には載っていなかった（未取得）"
+  },
+  {
+   "org_key": "elyza",
+   "note": "第1期の性能評価の表にあるモデル（Llama-3_120B）の Hugging Face 上の公開は、経済産業省の成果公開ページと、確かめた公式発表では確認できなかった（未取得）"
+  },
+  {
+   "org_key": "kotobatechnologiesjapan",
+   "note": "GENIAC の成果として公開されたモデルの Hugging Face 上の場所は、経済産業省の成果公開ページと、確かめた公式発表には載っていなかった（未取得）"
+  },
+  {
+   "org_key": "富士通",
+   "note": "富士通の採択時の発表（2024年5月17日）は Hugging Face などで公開する予定と書いているが、公開先のアカウントを示す公式発表は確かめられなかった（未取得）"
+  }
+ ],
+ "grants": [
+  {
+   "award_id": "JPNP20017",
+   "label": "NEDO プロジェクトコード P20017（ポスト5G情報通信システム基盤強化研究開発事業。GENIAC の公募はこの番号）",
+   "basis_url": "https://www.nedo.go.jp/koubo/CD3_100421.html",
+   "programs": [
+    "geniac-1a",
+    "geniac-1b",
+    "geniac-2",
+    "geniac-3",
+    "geniac-4-model",
+    "geniac-4-ai-ready",
+    "geniac-4-data"
+   ],
+   "note": "P20017 は通信・半導体の公募も含む事業全体の番号で、AI の公募だけの番号ではない",
+   "ai_only": true
+  },
+  {
+   "award_id": "JPNP26011",
+   "label": "NEDO プロジェクトコード P26011（ロボット基盤モデルの研究開発（GENIAC））",
+   "basis_url": "https://www.nedo.go.jp/koubo/CD3_100427.html",
+   "programs": [
+    "geniac-4-robot-1",
+    "geniac-4-robot-2"
+   ],
+   "ai_only": true
+  },
+  {
+   "award_id": "JPNP21004",
+   "label": "NEDO プロジェクトコード P21004（人工知能活用による革新的リモート技術開発）",
+   "basis_url": "https://www.nedo.go.jp/content/800055526.pdf",
+   "programs": [
+    "nedo-remote-ai-2021"
+   ]
+  },
+  {
+   "award_id": "JPMJCR2551|JPMJCR2552|JPMJCR2553|JPMJCR2554|JPMJCR2555",
+   "label": "JST CREST 2025年度採択課題の課題番号（JPMJCR2551〜2555）",
+   "basis_url": "https://www.jst.go.jp/pr/info/info1793/index.html",
+   "programs": [
+    "jst-crest-2025-real-world-intelligence"
+   ]
+  }
+ ],
+ "benchmarks": [
+  {
+   "org_key": "elyza",
+   "model": "Llama-3_120B",
+   "kind": "table",
+   "values": [
+    [
+     "日本語総合",
+     0.786
+    ],
+    [
+     "理解（Jaster）",
+     0.725
+    ],
+    [
+     "生成（JMTBench）",
+     0.847
+    ]
+   ],
+   "note": "",
+   "source_title": "経済産業省 GENIAC「GENIAC事業 第1期 性能評価結果公開」図1（表）。Weights & Biases 社と協業した非公開の評価データ（Jaster-GENIAC-v0.1・JMT-Bench-GENIAC-v0.1）による評価。表の画像から転記",
+   "source_url": "https://geniac.meti.go.jp/selection_1/result_1/index.html",
+   "as_of": "2024年8月時点（ページの記載）"
+  },
+  {
+   "org_key": "preferredelements",
+   "model": "PLaMo_100B",
+   "kind": "table",
+   "values": [
+    [
+     "日本語総合",
+     0.769
+    ],
+    [
+     "理解（Jaster）",
+     0.756
+    ],
+    [
+     "生成（JMTBench）",
+     0.783
+    ]
+   ],
+   "note": "",
+   "source_title": "経済産業省 GENIAC「GENIAC事業 第1期 性能評価結果公開」図1（表）。Weights & Biases 社と協業した非公開の評価データ（Jaster-GENIAC-v0.1・JMT-Bench-GENIAC-v0.1）による評価。表の画像から転記",
+   "source_url": "https://geniac.meti.go.jp/selection_1/result_1/index.html",
+   "as_of": "2024年8月時点（ページの記載）"
+  },
+  {
+   "org_key": "turing",
+   "model": "Llama-3-heron-brain-70B",
+   "kind": "table",
+   "values": [
+    [
+     "日本語総合",
+     0.75
+    ],
+    [
+     "理解（Jaster）",
+     0.712
+    ],
+    [
+     "生成（JMTBench）",
+     0.789
+    ]
+   ],
+   "note": "",
+   "source_title": "経済産業省 GENIAC「GENIAC事業 第1期 性能評価結果公開」図1（表）。Weights & Biases 社と協業した非公開の評価データ（Jaster-GENIAC-v0.1・JMT-Bench-GENIAC-v0.1）による評価。表の画像から転記",
+   "source_url": "https://geniac.meti.go.jp/selection_1/result_1/index.html",
+   "as_of": "2024年8月時点（ページの記載）"
+  },
+  {
+   "org_key": "abeja",
+   "model": "ABEJA_mixtral_8x7B",
+   "kind": "table",
+   "values": [
+    [
+     "日本語総合",
+     0.657
+    ],
+    [
+     "理解（Jaster）",
+     0.611
+    ],
+    [
+     "生成（JMTBench）",
+     0.704
+    ]
+   ],
+   "note": "",
+   "source_title": "経済産業省 GENIAC「GENIAC事業 第1期 性能評価結果公開」図1（表）。Weights & Biases 社と協業した非公開の評価データ（Jaster-GENIAC-v0.1・JMT-Bench-GENIAC-v0.1）による評価。表の画像から転記",
+   "source_url": "https://geniac.meti.go.jp/selection_1/result_1/index.html",
+   "as_of": "2024年8月時点（ページの記載）"
+  },
+  {
+   "org_key": "東京大学",
+   "model": "Tanuki_8x8B",
+   "kind": "table",
+   "values": [
+    [
+     "日本語総合",
+     0.548
+    ],
+    [
+     "理解（Jaster）",
+     0.433
+    ],
+    [
+     "生成（JMTBench）",
+     0.664
+    ]
+   ],
+   "note": "",
+   "source_title": "経済産業省 GENIAC「GENIAC事業 第1期 性能評価結果公開」図1（表）。Weights & Biases 社と協業した非公開の評価データ（Jaster-GENIAC-v0.1・JMT-Bench-GENIAC-v0.1）による評価。表の画像から転記",
+   "source_url": "https://geniac.meti.go.jp/selection_1/result_1/index.html",
+   "as_of": "2024年8月時点（ページの記載）"
+  },
+  {
+   "org_key": "情報システム研究機構",
+   "model": "NII_172B (*)",
+   "kind": "table",
+   "values": [
+    [
+     "日本語総合",
+     0.398
+    ],
+    [
+     "理解（Jaster）",
+     0.293
+    ],
+    [
+     "生成（JMTBench）",
+     0.502
+    ]
+   ],
+   "note": "ページの注：学習を継続中のモデルで、目標としていた学習量の約30%（4,000億トークン）までの結果",
+   "source_title": "経済産業省 GENIAC「GENIAC事業 第1期 性能評価結果公開」図1（表）。Weights & Biases 社と協業した非公開の評価データ（Jaster-GENIAC-v0.1・JMT-Bench-GENIAC-v0.1）による評価。表の画像から転記",
+   "source_url": "https://geniac.meti.go.jp/selection_1/result_1/index.html",
+   "as_of": "2024年8月時点（ページの記載）"
+  },
+  {
+   "org_key": "情報システム研究機構",
+   "model": "llm-jp-3-172b-instruct3",
+   "kind": "table",
+   "values": [
+    [
+     "llm-jp-eval v1.4.1",
+     0.613
+    ],
+    [
+     "llm-leaderboard（g-leaderboard ブランチ。GENIAC の性能評価に用いられた枠組み）",
+     0.669
+    ]
+   ],
+   "note": "",
+   "source_title": "国立情報学研究所 ニュースリリース「完全にオープンな約1,720億パラメータ（GPT-3級）の大規模言語モデル「llm-jp-3-172b-instruct3」を一般公開」",
+   "source_url": "https://www.nii.ac.jp/news/upload/nii_newsrelease_20241224.pdf",
+   "as_of": "2024年12月24日の発表"
+  }
+ ],
+ "ror_force": {},
+ "ror_exclude": {},
+ "notes": [
+  "論文の助成番号は、OpenAlex が論文の謝辞から拾った値（awards.funder_award_id）。NEDO の謝辞は「JPNP」＋プロジェクト番号の形で書かれることが多いため、P20017 を JPNP20017 として引いた。謝辞に番号を書いていない論文は数に入らない。",
+  "P20017（ポスト5G）の論文は、通信・半導体の公募の論文と分けるため、OpenAlex の主題が AI 分野（1702/1707）で、かつ採択先がその番号の公募に採択された日以降に出たものだけを採択先にひも付けた。"
+ ]
+}
