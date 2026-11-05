@@ -1,0 +1,68 @@
+{
+ "fields": [
+  {
+   "slug": "ai",
+   "name": "AI政策",
+   "title": "Kurage 政策の流れトラッカー｜AI政策",
+   "lead": "AI政策について、会議での政策形成、予算、採択、実施、評価を、公開されている資料だけでつないで並べます。だれが何を決めたかの評価や、利益相反があるかの判断はしません。出すのは公表資料の記載と、その出典だけです。",
+   "generated_at": "2026-11-05",
+   "summary": {
+    "projects": 224,
+    "projects_name": 50,
+    "projects_body": 174,
+    "projects_2025": 192,
+    "projects_2024only": 32,
+    "initial_2025": 544148046000,
+    "initial_2025_name": 198255869000,
+    "current_2024": 2228661154821,
+    "exec_2024": 2171545520538,
+    "current_2024_name": 1069972264712,
+    "exec_2024_name": 1059411523032,
+    "payee_rows": 2461,
+    "with_council_ref": 16,
+    "with_programs": 2,
+    "with_ext_review": 59,
+    "with_review": 206,
+    "with_kokkai": 6,
+    "programs": 14,
+    "award_rows": 116,
+    "evaluations": 12,
+    "overlaps": 16,
+    "person_overlaps": 2,
+    "councils": 6,
+    "meetings": 36,
+    "outputs": 7,
+    "members": 36
+   },
+   "trackers": [
+    "ai-hou",
+    "ai-agent",
+    "datacenter-denryoku",
+    "ai-biosecurity",
+    "ai-kodomo",
+    "ai-koyo-zeisei"
+   ]
+  },
+  {
+   "slug": "koho",
+   "type": "contracts",
+   "name": "政府広報",
+   "title": "Kurage 政策の流れトラッカー｜政府広報",
+   "lead": "国の広報・周知・啓発・イベントなどの契約を、行政事業レビューの支出先の記載から府省ごとに集め、契約先・金額・契約の方式・入札者数・落札率と、事業の成果目標と実績を並べます。評価や推測はしません。名前と数字には出典を付けています。",
+   "generated_at": "2026-11-05",
+   "summary": {
+    "contracts": 3883,
+    "sum": 194400369797.0,
+    "payees": 2175,
+    "projects": 747,
+    "exec_year": "2024"
+   },
+   "trackers": [
+    "seifu-koho"
+   ],
+   "card_line2": "契約先と金額、成果はどうだったか。",
+   "card_sub1": "2024年度の広報等の契約 3,883件・1,944.0億円・契約先 2,175",
+   "card_sub2": "行政事業レビューの支出先の記載から、府省ごとに。"
+  }
+ ]
+}

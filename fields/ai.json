@@ -1,0 +1,45 @@
+{
+  "slug": "ai",
+  "name": "AI政策",
+  "title": "Kurage 政策の流れトラッカー｜AI政策",
+  "lead": "AI政策について、会議での政策形成、予算、採択、実施、評価を、公開されている資料だけでつないで並べます。だれが何を決めたかの評価や、利益相反があるかの判断はしません。出すのは公表資料の記載と、その出典だけです。",
+  "rs_years": ["2025", "2024"],
+  "rs_match": {
+    "regex": "(?<![A-Za-z])AI(?![A-Za-z])|人工知能|機械学習|深層学習|ディープラーニング|大規模言語モデル|(?<![A-Za-z])LLM(?![A-Za-z])|基盤モデル|生成AI",
+    "words_label": "AI・人工知能・生成AI・機械学習・深層学習・ディープラーニング・大規模言語モデル・LLM・基盤モデル",
+    "name_fields": ["事業名"],
+    "body_fields": ["事業の目的", "現状・課題", "事業の概要"]
+  },
+  "councils_file": "data/councils.json",
+  "awards_file": "data/awards.json",
+  "council_name_min_len": 10,
+  "trackers": ["ai-hou", "ai-agent", "datacenter-denryoku", "ai-biosecurity", "ai-kodomo", "ai-koyo-zeisei"],
+  "project_links": {
+    "3522": {
+      "programs": ["geniac-1a", "geniac-1b", "geniac-2", "geniac-3", "geniac-4-model", "geniac-4-ai-ready", "geniac-4-robot-1", "geniac-4-robot-2", "geniac-4-data"],
+      "programs_basis": "NEDOの公募名が「ポスト5G情報通信システム基盤強化研究開発事業／…」で始まる（公募ページの記載）",
+      "evaluations": ["ポスト５Ｇ情報通信システム基盤強化研究開発事業（複数課題プログラム）", "ポスト５Ｇ情報通信システム基盤強化研究開発事業（AI 基盤モデル"],
+      "evaluations_basis": "経済産業省の技術評価の対象事業名がRSの事業名と同じ",
+      "council_terms": [["GENIAC"], ["ポスト5G"]],
+      "kokkai_terms": ["ＧＥＮＩＡＣ"]
+    },
+    "3510": {
+      "programs": ["nedo-remote-ai-2021"],
+      "programs_basis": "NEDOの終了時評価報告書（P21004）に「METI予算要求名称：IoT社会実現に向けた次世代人工知能・センシング等中核技術開発」と書かれている。RSの事業概要にも「（２）革新的リモート技術開発」がある",
+      "evaluations": ["人工知能活用による革新的リモート技術開発（P21004）|終了時評価", "人工知能技術適用によるスマート社会の実現（P18010）|終了時評価"],
+      "evaluations_basis": "各評価報告書の「METI予算要求名称」「METI予算請求名称」の欄にRSの事業名が書かれている"
+    },
+    "3743": {
+      "evaluations": ["次世代人工知能・ロボットの中核となるインテグレート技術開発（P18002）"],
+      "evaluations_basis": "NEDOの評価対象のプロジェクト名が、RSの事業名から「事業」を除いたものと同じ"
+    },
+    "7158": {"council_terms": [["ABCI"]], "kokkai_terms": ["ＡＢＣＩ"]},
+    "1666": {"kokkai_terms": ["革新知能統合研究センター"]},
+    "20509": {"council_terms": [["AIセーフティ・インスティテュート"]], "kokkai_terms": ["ＡＩセーフティ・インスティテュート"]},
+    "21790": {"council_terms": [["AIセーフティ・インスティテュート"]]},
+    "22076": {"council_terms": [["AIforScience"]]},
+    "7755": {"kokkai_terms": ["大規模言語モデル 情報通信研究機構"]},
+    "21359": {"kokkai_terms": ["エッジＡＩ半導体"]}
+  },
+  "unlinked_programs_note": "RSの2024・2025年度シートに、公募の親事業と同じ名前の事業が見つからなかった"
+}
