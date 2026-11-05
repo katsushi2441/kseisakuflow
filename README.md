@@ -3,7 +3,7 @@
 政策が「どの会議で形づくられ → どれだけ予算がつき → だれに採択され → どう実施され → どう評価されたか」を、
 公表資料だけでつないで並べるデータ作り。画面は国会トラッカーの中（xb4g/giin の lib/flow_pages.php・lib/flow_koho.php）。
 
-- 公開: https://xb4g.com/giin/flow/ （分野: /flow/ai・/flow/koho）
+- 公開: https://xb4g.com/giin/flow/ （分野: /flow/ai・/flow/koho・/flow/cyber）
 - しないこと: 利益相反の有無の判断、事業・組織・人の評価、推測。同じ名前が両方に出るものを「出る」と並べるだけ。
 
 ## 分野の設定（fields/<分野>.json）
@@ -12,6 +12,13 @@
 |---|---|---|
 | 会議→予算→採択→評価（既定） | fields/ai.json | scripts/build_flow.py |
 | 契約を集める（`"type": "contracts"`） | fields/koho.json | scripts/build_koho.py |
+| 計画→予算→点検→国会（`"ui": {"policy": "plans"}`） | fields/cyber.json | scripts/build_flow.py |
+
+`ui.policy = "plans"` の分野は会議資料を集めず、行政事業レビューの「関係する計画・通知等」を政策形成の段にする（画面は会議・採択・利益相反の節を出さず、計画ごとに事業を束ねた節を出す）。
+会議と採択は空のファイル（data/councils_none.json・data/awards_none.json）を指す。`outcomes_file` は無いファイルを指して、AI の採択先の成果が混ざらないようにする。
+`ui.topic` は画面の「◯◯関連事業」の言い回し、`card_line2`・`card_sub1`・`card_sub2`・`card_steps` はカード画像の文言（make_ogp_flow.py）。
+サイバー分野（2026-11-05）は、二本松哲也さんの「議論の件数だけでなく、制度設計や実際の対策にどう反映されたかを検証することが重要」という返信を受けて作った。
+金額の見出しは事業名に語を含む事業だけで数える（概要にだけ語を含む事業には、中小企業生産性革命推進事業のようにセキュリティが一部にすぎない大きな事業が入るため）。
 
 分野を足すときは fields/ に設定を1つ足し、対応するスクリプトを回す（防災・子育てなど）。
 
@@ -30,9 +37,10 @@
 # 2. 分野のデータ（--copy で xb4g/giin/data/flow/ へ写す）
 /usr/bin/python3 scripts/build_flow.py ai --copy
 /usr/bin/python3 scripts/build_koho.py koho --copy
+/usr/bin/python3 scripts/fetch_kokkai.py cyber && /usr/bin/python3 scripts/build_flow.py cyber --copy
 # 3. カード画像と公開（xb4g 側）
 cd ../xb4g/giin && /usr/bin/python3 scripts/make_ogp_flow.py
-/usr/bin/python3 scripts/deploy.py --only lib/flow_pages.php lib/flow_koho.php data/flow img/og/flow.png img/og/flow-ai.png img/og/flow-koho.png
+/usr/bin/python3 scripts/deploy.py --only lib/flow_pages.php lib/flow_koho.php data/flow img/og/flow.png img/og/flow-ai.png img/og/flow-koho.png img/og/flow-cyber.png
 ```
 
 ## 採択先の成果（2026-11-05）

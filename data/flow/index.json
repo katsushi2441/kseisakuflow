@@ -47,6 +47,7 @@
     "with_ext_review": 59,
     "with_review": 206,
     "with_kokkai": 6,
+    "with_plans": 192,
     "programs": 14,
     "award_rows": 116,
     "evaluations": 12,
@@ -78,7 +79,8 @@
     "ai-biosecurity",
     "ai-kodomo",
     "ai-koyo-zeisei"
-   ]
+   ],
+   "ui": {}
   },
   {
    "slug": "koho",
@@ -100,6 +102,85 @@
    "card_line2": "契約先と金額、成果はどうだったか。",
    "card_sub1": "2024年度の広報等の契約 3,883件・1,944.0億円・契約先 2,175",
    "card_sub2": "行政事業レビューの支出先の記載から、府省ごとに。"
+  },
+  {
+   "slug": "cyber",
+   "name": "サイバーセキュリティ・偽情報対策",
+   "title": "Kurage 政策の流れトラッカー｜サイバーセキュリティ・偽情報対策",
+   "lead": "サイバーセキュリティと偽情報への対策について、事業の根拠になった計画、予算、支出先、目標と実績、点検、国会の質疑を、公開されている資料だけでつないで並べます。国会でどれだけ議論されたかだけでなく、その議論が予算や事業、成果の記載にどう結びついているかをたどれるようにするためのものです。事業や組織の評価はしません。出すのは公表資料の記載と、その出典だけです。",
+   "generated_at": "2026-11-05",
+   "summary": {
+    "projects": 163,
+    "projects_name": 47,
+    "projects_body": 116,
+    "projects_2025": 148,
+    "projects_2024only": 15,
+    "initial_2025": 170566386000,
+    "initial_2025_name": 28690367000,
+    "current_2024": 759034128373,
+    "exec_2024": 765057973996,
+    "initial_2024": 169657700000,
+    "supp_2024": 406848085000,
+    "carried_2024": 183747105117,
+    "top_exec_2024": [
+     {
+      "id": "3649",
+      "name": "中小企業生産性革命推進事業",
+      "supp": 339986201000,
+      "exec": 339986201000
+     },
+     {
+      "id": "5945",
+      "name": "中小企業生産性革命推進事業補助金",
+      "supp": 0,
+      "exec": 155640232000
+     },
+     {
+      "id": "3320",
+      "name": "国立研究開発法人農業・食品産業技術総合研究機構に要する経費",
+      "supp": 0,
+      "exec": 48368596000
+     }
+    ],
+    "current_2024_name": 59431543798,
+    "exec_2024_name": 30603466896,
+    "payee_rows": 2557,
+    "with_council_ref": 0,
+    "with_programs": 0,
+    "with_ext_review": 44,
+    "with_review": 153,
+    "with_kokkai": 29,
+    "with_plans": 127,
+    "programs": 0,
+    "award_rows": 0,
+    "evaluations": 0,
+    "overlaps": 0,
+    "person_overlaps": 0,
+    "councils": 0,
+    "meetings": 0,
+    "outputs": 0,
+    "members": 0
+   },
+   "trackers": [
+    "nise-joho",
+    "zeijakusei-chosa",
+    "ransomware",
+    "joho-roei",
+    "keizai-anpo-infra"
+   ],
+   "ui": {
+    "topic": "サイバーセキュリティ・偽情報",
+    "policy": "plans"
+   },
+   "card_line2": "国会の質疑から予算・成果までどうつながったか。",
+   "card_sub1": "根拠の計画・予算・支出先・点検・国会の質疑を1本に。",
+   "card_sub2": "行政事業レビューと国会会議録を、出典つきで。",
+   "card_steps": [
+    "計画",
+    "予算",
+    "点検",
+    "国会"
+   ]
   }
  ]
 }

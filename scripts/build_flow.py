@@ -217,7 +217,7 @@ def kokkai_cache(term):
 def excerpt(body, term, w=70):
     b = body.replace('\r', '').replace('\n', '')
     words = [t for t in re.split(r'[\s　]+', term) if t]
-    i = b.find(words[0]) if words else -1
+    i = b.find(max(words, key=len)) if words else -1   # 複数語（AND）は一番長い語の周りを切り出す（「港湾 サイバー攻撃」で港湾の周りだけになるのを避ける）
     if i < 0:
         return b[:w * 2] + '…'
     s = max(0, i - w)
@@ -342,8 +342,10 @@ def person_overlaps(councils, awards, linked_prog):
     return [{'key': k, 'members': mem[k], 'committees': v} for k, v in out.items()]
 
 # ---------------------------------------------------------------- まとめ
-def stage_count(p):
-    return sum([bool(p['council_refs']), bool(p['budget']), bool(p['payees']), bool(p['programs']),
+def stage_count(p, policy='councils'):
+    # policy='plans' の分野（会議資料を集めていない分野）は、行政事業レビューの「関係する計画・通知等」を政策形成の段に数える
+    p['policy_on'] = bool(p['council_refs']) or (policy == 'plans' and bool(p['plans']))
+    return sum([p['policy_on'], bool(p['budget']), bool(p['payees']), bool(p['programs']),
                 bool(p['review'] and (p['review']['self_result'] or p['review']['ext_opinion'])) or bool(p['evaluations']), bool(p['kokkai'])])
 
 def main():
@@ -359,7 +361,7 @@ def main():
     # 個人名の突き合わせは載せない（2026-11-05 ユーザー了承: 個人に疑いをかけたように受け取られるおそれ。組織名の重なりだけ残す）
     pov = []
     for p in projects.values():
-        p['stages'] = stage_count(p)
+        p['stages'] = stage_count(p, field.get('ui', {}).get('policy', 'councils'))
     plist = sorted(projects.values(), key=lambda p: (-p['stages'], -(len(p['programs']) > 0), -(len(p['council_refs']) > 0),
                                                      -max([b['initial'] or 0 for b in p['budget'] if b['year'] == '2025'] or [0])))
     def ysum(key, year, tier=None):
@@ -383,6 +385,7 @@ def main():
         'with_ext_review': sum(bool(p['review'] and p['review']['ext_opinion']) for p in projects.values()),
         'with_review': sum(bool(p['review'] and p['review']['self_result']) for p in projects.values()),
         'with_kokkai': sum(bool(p['kokkai']) for p in projects.values()),
+        'with_plans': sum(bool(p['plans']) for p in projects.values()),
         'programs': len(awards['programs']), 'award_rows': sum(len(g.get('awards', [])) for g in awards['programs']),
         'evaluations': len(awards['evaluations']), 'overlaps': len(ov), 'person_overlaps': len(pov),
         'councils': len(councils['councils']),
@@ -390,7 +393,7 @@ def main():
         'outputs': len({o['url'] for c in councils['councils'] for o in (c.get('outputs') or []) if o.get('url')}),
         'members': len({N(m['name']) for c in councils['councils'] for r in (c.get('rosters') or []) for m in (r.get('members') or [])}),
     }
-    out = {'field': {k: field[k] for k in ('slug', 'name', 'title', 'lead')}, 'words_label': field['rs_match']['words_label'],
+    out = {'field': {**{k: field[k] for k in ('slug', 'name', 'title', 'lead')}, 'ui': field.get('ui', {})}, 'words_label': field['rs_match']['words_label'],
            'generated_at': TODAY, 'summary': summary,
            'councils': councils['councils'], 'councils_meta': {k: councils.get(k) for k in ('fetched_at', 'source_note', 'scope_note')},
            'programs': awards['programs'], 'evaluations': awards['evaluations'], 'evaluation_rules': awards.get('evaluation_rules'),
@@ -417,7 +420,8 @@ def main():
     ip = os.path.join(ROOT, 'data', 'flow', 'index.json')
     ix = json.load(open(ip, encoding='utf-8')) if os.path.exists(ip) else {'fields': []}
     ent = {'slug': slug, 'name': field['name'], 'title': field['title'], 'lead': field['lead'],
-           'generated_at': TODAY, 'summary': summary, 'trackers': field.get('trackers', [])}
+           'generated_at': TODAY, 'summary': summary, 'trackers': field.get('trackers', []), 'ui': field.get('ui', {}),
+           **{k: field[k] for k in ('card_line2', 'card_sub1', 'card_sub2', 'card_steps') if k in field}}   # カード画像の文言（make_ogp_flow.py が読む）
     ix['fields'] = [ent if f['slug'] == slug else f for f in ix['fields']] if any(f['slug'] == slug for f in ix['fields']) else ix['fields'] + [ent]
     json.dump(ix, open(ip, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     if '--copy' in sys.argv:
