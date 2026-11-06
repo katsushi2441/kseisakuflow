@@ -1,0 +1,1811 @@
+{
+ "generated_at": "2026-11-06",
+ "n": 55,
+ "summary": {
+  "base": 31,
+  "data": 13,
+  "tuning": 16,
+  "eval": 25,
+  "safety": 25,
+  "license": 54
+ },
+ "unknown": {
+  "base": 3,
+  "data": 6,
+  "tuning": 6,
+  "eval": 6,
+  "safety": 6,
+  "license": 0
+ },
+ "gated_unreadable": 6,
+ "items": [
+  {
+   "key": "base",
+   "label": "元のモデル（出自）"
+  },
+  {
+   "key": "data",
+   "label": "学習データ"
+  },
+  {
+   "key": "tuning",
+   "label": "調整の内容（学習の手順）"
+  },
+  {
+   "key": "eval",
+   "label": "評価（ベンチマーク）"
+  },
+  {
+   "key": "safety",
+   "label": "リスク・バイアス・制限"
+  },
+  {
+   "key": "license",
+   "label": "ライセンス"
+  }
+ ],
+ "rule": "Hugging Face のモデルカード（メタデータの欄と README の見出し）に、その項目の記載があるかを機械的に判定。元のモデル＝base_model 欄か見出し、学習データ＝datasets 欄・dataset タグか見出し、評価＝model-index 欄か見出し、リスク・バイアス・制限＝見出し、調整の内容＝見出し、ライセンス＝license 欄。記載の有無だけを数え、内容の十分さは判定しない。記載が無いことは、その作業をしていないことを意味しない（論文や別のページに書かれている場合がある）。",
+ "source": "Hugging Face Hub 公開API（cardData・tags）と各モデルの README.md（取得日は data/outcomes.json と同じ）",
+ "models": [
+  {
+   "id": "nri-ai/Qwen3-14B-Ja-Fin-Thinking",
+   "url": "https://huggingface.co/nri-ai/Qwen3-14B-Ja-Fin-Thinking",
+   "org": "株式会社野村総合研究所",
+   "license": "apache-2.0",
+   "downloads_all": 331,
+   "created": "2026-03-09",
+   "gated": false,
+   "readme_chars": 6782,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "nri-ai/Qwen3-14B-Ja-Fin-CPT"
+     ]
+    },
+    "data": {
+     "by": "meta",
+     "field": "datasets",
+     "value": [
+      "nri-ai/nri-fin-reasoning"
+     ]
+    },
+    "tuning": {
+     "by": "readme",
+     "heading": "### Supervised Fine-Tuning"
+    },
+    "eval": {
+     "by": "readme",
+     "heading": "## Benchmark Results"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "### Out-of-Scope Uses"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "nri-ai/gpt-oss-20b-Ja-Fin-Thinking",
+   "url": "https://huggingface.co/nri-ai/gpt-oss-20b-Ja-Fin-Thinking",
+   "org": "株式会社野村総合研究所",
+   "license": "apache-2.0",
+   "downloads_all": 1428,
+   "created": "2026-03-09",
+   "gated": false,
+   "readme_chars": 6885,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "nri-ai/gpt-oss-20b-Ja-Fin-CPT"
+     ]
+    },
+    "data": {
+     "by": "meta",
+     "field": "datasets",
+     "value": [
+      "nri-ai/nri-fin-reasoning"
+     ]
+    },
+    "tuning": {
+     "by": "readme",
+     "heading": "### Supervised Fine-Tuning"
+    },
+    "eval": {
+     "by": "readme",
+     "heading": "## Benchmark Results"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "### Out-of-Scope Uses"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "llm-jp/llm-jp-3-13b",
+   "url": "https://huggingface.co/llm-jp/llm-jp-3-13b",
+   "org": "大学共同利用機関法人情報・システム研究機構",
+   "license": "apache-2.0",
+   "downloads_all": 332734,
+   "created": "2024-09-23",
+   "gated": false,
+   "readme_chars": 8291,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": {
+     "by": "readme",
+     "heading": "## Datasets"
+    },
+    "tuning": {
+     "by": "readme",
+     "heading": "### Instruction tuning"
+    },
+    "eval": {
+     "by": "readme",
+     "heading": "## Evaluation"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "llm-jp/llm-jp-3-13b-instruct",
+   "url": "https://huggingface.co/llm-jp/llm-jp-3-13b-instruct",
+   "org": "大学共同利用機関法人情報・システム研究機構",
+   "license": "apache-2.0",
+   "downloads_all": 104415,
+   "created": "2024-09-23",
+   "gated": false,
+   "readme_chars": 8460,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": {
+     "by": "readme",
+     "heading": "## Datasets"
+    },
+    "tuning": {
+     "by": "readme",
+     "heading": "### Instruction tuning"
+    },
+    "eval": {
+     "by": "readme",
+     "heading": "## Evaluation"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "llm-jp/llm-jp-3-172b-instruct3",
+   "url": "https://huggingface.co/llm-jp/llm-jp-3-172b-instruct3",
+   "org": "大学共同利用機関法人情報・システム研究機構",
+   "license": "other",
+   "downloads_all": 11297,
+   "created": "2024-12-26",
+   "gated": false,
+   "readme_chars": 9970,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": {
+     "by": "readme",
+     "heading": "## Datasets"
+    },
+    "tuning": {
+     "by": "readme",
+     "heading": "### Post-training"
+    },
+    "eval": {
+     "by": "readme",
+     "heading": "## Evaluation"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "other"
+    }
+   }
+  },
+  {
+   "id": "DATAGRID-research/DATAGRID-Open-Sora-Plan-v1.3.0-0.16M",
+   "url": "https://huggingface.co/DATAGRID-research/DATAGRID-Open-Sora-Plan-v1.3.0-0.16M",
+   "org": "株式会社データグリッド",
+   "license": "apache-2.0",
+   "downloads_all": 0,
+   "created": "2025-05-14",
+   "gated": false,
+   "readme_chars": 3399,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "LanguageBind/Open-Sora-Plan-v1.3.0"
+     ]
+    },
+    "data": null,
+    "tuning": {
+     "by": "readme",
+     "heading": "## Training Details"
+    },
+    "eval": {
+     "by": "readme",
+     "heading": "## Results"
+    },
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "Rakuten/RakutenAI-3.0",
+   "url": "https://huggingface.co/Rakuten/RakutenAI-3.0",
+   "org": "楽天グループ株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 69836,
+   "created": "2026-03-16",
+   "gated": false,
+   "readme_chars": 7052,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "deepseek-ai/DeepSeek-V3-0324"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "### Academic Japanese-Language Benchmarks"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "## Limitations and Bias"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "aidealab/AIdeaLab-VideoJP",
+   "url": "https://huggingface.co/aidealab/AIdeaLab-VideoJP",
+   "org": "株式会社 AIdeaLab",
+   "license": "apache-2.0",
+   "downloads_all": 1115,
+   "created": "2025-01-07",
+   "gated": false,
+   "readme_chars": 6543,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": {
+     "by": "meta",
+     "field": "datasets",
+     "value": [
+      "HuggingFaceFV/finevideo",
+      "LanguageBind/Open-Sora-Plan-v1.0.0"
+     ]
+    },
+    "tuning": {
+     "by": "readme",
+     "heading": "## Training Details"
+    },
+    "eval": null,
+    "safety": {
+     "by": "readme",
+     "heading": "### Out-of-Scope Use"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "future-architect/Llama-3.1-Future-Code-Ja-8B",
+   "url": "https://huggingface.co/future-architect/Llama-3.1-Future-Code-Ja-8B",
+   "org": "フューチャー株式会社",
+   "license": "llama3.1",
+   "downloads_all": 4925,
+   "created": "2025-06-03",
+   "gated": false,
+   "readme_chars": 14118,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": {
+     "by": "meta",
+     "field": "datasets",
+     "value": [
+      "bigcode/the-stack-v2",
+      "bigcode/jupyter-code-text-pairs",
+      "bigcode/the-stack-github-issues"
+     ]
+    },
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Model Performance"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "llama3.1"
+    }
+   }
+  },
+  {
+   "id": "llm-jp/llm-jp-3-172b-alpha1",
+   "url": "https://huggingface.co/llm-jp/llm-jp-3-172b-alpha1",
+   "org": "大学共同利用機関法人情報・システム研究機構",
+   "license": "apache-2.0",
+   "downloads_all": 800,
+   "created": "2024-09-29",
+   "gated": false,
+   "readme_chars": 7035,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": {
+     "by": "readme",
+     "heading": "## Datasets"
+    },
+    "tuning": {
+     "by": "readme",
+     "heading": "### Instruction tuning"
+    },
+    "eval": null,
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "llm-jp/llm-jp-3-172b-alpha1-instruct",
+   "url": "https://huggingface.co/llm-jp/llm-jp-3-172b-alpha1-instruct",
+   "org": "大学共同利用機関法人情報・システム研究機構",
+   "license": "apache-2.0",
+   "downloads_all": 810,
+   "created": "2024-09-30",
+   "gated": false,
+   "readme_chars": 7203,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": {
+     "by": "readme",
+     "heading": "## Datasets"
+    },
+    "tuning": {
+     "by": "readme",
+     "heading": "### Instruction tuning"
+    },
+    "eval": null,
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "llm-jp/llm-jp-3-172b-alpha2",
+   "url": "https://huggingface.co/llm-jp/llm-jp-3-172b-alpha2",
+   "org": "大学共同利用機関法人情報・システム研究機構",
+   "license": "apache-2.0",
+   "downloads_all": 707,
+   "created": "2024-09-29",
+   "gated": false,
+   "readme_chars": 7035,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": {
+     "by": "readme",
+     "heading": "## Datasets"
+    },
+    "tuning": {
+     "by": "readme",
+     "heading": "### Instruction tuning"
+    },
+    "eval": null,
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "llm-jp/llm-jp-3-172b-alpha2-instruct",
+   "url": "https://huggingface.co/llm-jp/llm-jp-3-172b-alpha2-instruct",
+   "org": "大学共同利用機関法人情報・システム研究機構",
+   "license": "apache-2.0",
+   "downloads_all": 557,
+   "created": "2024-09-29",
+   "gated": false,
+   "readme_chars": 7204,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": {
+     "by": "readme",
+     "heading": "## Datasets"
+    },
+    "tuning": {
+     "by": "readme",
+     "heading": "### Instruction tuning"
+    },
+    "eval": null,
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "pfnet/plamo-2.1-2b-vl",
+   "url": "https://huggingface.co/pfnet/plamo-2.1-2b-vl",
+   "org": "株式会社 Preferred Networks",
+   "license": "other",
+   "downloads_all": 62134,
+   "created": "2026-03-31",
+   "gated": false,
+   "readme_chars": 9480,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "pfnet/plamo-2.1-2b-cpt",
+      "google/siglip2-so400m-patch14-384"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Benchmark Results"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "### Scope and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "other"
+    }
+   }
+  },
+  {
+   "id": "pfnet/plamo-2.1-8b-vl",
+   "url": "https://huggingface.co/pfnet/plamo-2.1-8b-vl",
+   "org": "株式会社 Preferred Networks",
+   "license": "other",
+   "downloads_all": 13217,
+   "created": "2026-03-31",
+   "gated": false,
+   "readme_chars": 9435,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "pfnet/plamo-2.1-8b-cpt",
+      "google/siglip2-so400m-patch14-384"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Benchmark Results"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "### Scope and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "other"
+    }
+   }
+  },
+  {
+   "id": "turing-motors/Heron-NVILA-Lite-15B",
+   "url": "https://huggingface.co/turing-motors/Heron-NVILA-Lite-15B",
+   "org": "Turing 株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 13584,
+   "created": "2025-03-23",
+   "gated": false,
+   "readme_chars": 8892,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen2.5-14B-Instruct",
+      "Efficient-Large-Model/paligemma-siglip-so400m-patch14-448"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Evaluation"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "turing-motors/Heron-NVILA-Lite-1B",
+   "url": "https://huggingface.co/turing-motors/Heron-NVILA-Lite-1B",
+   "org": "Turing 株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 6397,
+   "created": "2025-03-24",
+   "gated": false,
+   "readme_chars": 8891,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen2.5-0.5B-Instruct",
+      "Efficient-Large-Model/paligemma-siglip-so400m-patch14-448"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Evaluation"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "turing-motors/Heron-NVILA-Lite-2B",
+   "url": "https://huggingface.co/turing-motors/Heron-NVILA-Lite-2B",
+   "org": "Turing 株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 18664,
+   "created": "2025-03-21",
+   "gated": false,
+   "readme_chars": 8890,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen2.5-1.5B-Instruct",
+      "Efficient-Large-Model/paligemma-siglip-so400m-patch14-448"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Evaluation"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "turing-motors/Heron-NVILA-Lite-33B",
+   "url": "https://huggingface.co/turing-motors/Heron-NVILA-Lite-33B",
+   "org": "Turing 株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 2979,
+   "created": "2025-05-12",
+   "gated": false,
+   "readme_chars": 9027,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen2.5-32B-Instruct",
+      "google/siglip2-so400m-patch16-512"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Evaluation"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "DATAGRID-research/DATAGRID-Local-Attention-DiT-v1.0.0-0.52B",
+   "url": "https://huggingface.co/DATAGRID-research/DATAGRID-Local-Attention-DiT-v1.0.0-0.52B",
+   "org": "株式会社データグリッド",
+   "license": null,
+   "downloads_all": 265,
+   "created": "2025-05-12",
+   "gated": false,
+   "readme_chars": 2761,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": null,
+    "tuning": {
+     "by": "readme",
+     "heading": "# Training Details"
+    },
+    "eval": {
+     "by": "readme",
+     "heading": "# Results"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "# Limitations"
+    },
+    "license": null
+   }
+  },
+  {
+   "id": "aidealab/AnimeGen-I2V",
+   "url": "https://huggingface.co/aidealab/AnimeGen-I2V",
+   "org": "株式会社 AIdeaLab",
+   "license": "apache-2.0",
+   "downloads_all": 34968,
+   "created": "2026-06-17",
+   "gated": false,
+   "readme_chars": 11960,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Wan-AI/Wan2.2-I2V-A14B"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": {
+     "by": "readme",
+     "heading": "## Out-of-Scope Uses"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "aidealab/AnimeGen-T2V",
+   "url": "https://huggingface.co/aidealab/AnimeGen-T2V",
+   "org": "株式会社 AIdeaLab",
+   "license": "apache-2.0",
+   "downloads_all": 18684,
+   "created": "2026-06-17",
+   "gated": false,
+   "readme_chars": 8916,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Wan-AI/Wan2.2-T2V-A14B"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": {
+     "by": "readme",
+     "heading": "## Out-of-Scope Uses"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "karakuri-ai/karakuri-lm-32b-thinking-2501-exp",
+   "url": "https://huggingface.co/karakuri-ai/karakuri-lm-32b-thinking-2501-exp",
+   "org": "カラクリ株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 14324,
+   "created": "2025-01-23",
+   "gated": false,
+   "readme_chars": 2040,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": "Qwen/QwQ-32B-Preview"
+    },
+    "data": null,
+    "tuning": {
+     "by": "readme",
+     "heading": "## Training Details"
+    },
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "karakuri-ai/karakuri-vl-2-8b-thinking-2603",
+   "url": "https://huggingface.co/karakuri-ai/karakuri-vl-2-8b-thinking-2603",
+   "org": "カラクリ株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 730,
+   "created": "2026-03-27",
+   "gated": false,
+   "readme_chars": 2784,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen3-VL-8B-Thinking"
+     ]
+    },
+    "data": null,
+    "tuning": {
+     "by": "readme",
+     "heading": "## Training Details"
+    },
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "karakuri-ai/karakuri-vl-32b-instruct-2507",
+   "url": "https://huggingface.co/karakuri-ai/karakuri-vl-32b-instruct-2507",
+   "org": "カラクリ株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 15748,
+   "created": "2025-07-03",
+   "gated": false,
+   "readme_chars": 3053,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen2.5-VL-32B-Instruct"
+     ]
+    },
+    "data": null,
+    "tuning": {
+     "by": "readme",
+     "heading": "## Training Details"
+    },
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "karakuri-ai/karakuri-vl-32b-thinking-2507-exp",
+   "url": "https://huggingface.co/karakuri-ai/karakuri-vl-32b-thinking-2507-exp",
+   "org": "カラクリ株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 40547,
+   "created": "2025-07-03",
+   "gated": false,
+   "readme_chars": 5496,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "karakuri-ai/karakuri-vl-32b-instruct-2507"
+     ]
+    },
+    "data": null,
+    "tuning": {
+     "by": "readme",
+     "heading": "## Training Details"
+    },
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "nablasinc/NABLA-FC",
+   "url": "https://huggingface.co/nablasinc/NABLA-FC",
+   "org": "NABLAS 株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 420,
+   "created": "2026-02-25",
+   "gated": false,
+   "readme_chars": 5540,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen3-8B"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Benchmark Results"
+    },
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "nri-ai/Qwen3-14B-Ja-Fin-CPT",
+   "url": "https://huggingface.co/nri-ai/Qwen3-14B-Ja-Fin-CPT",
+   "org": "株式会社野村総合研究所",
+   "license": "apache-2.0",
+   "downloads_all": 174,
+   "created": "2026-03-09",
+   "gated": false,
+   "readme_chars": 4705,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen3-14B-Base"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": {
+     "by": "readme",
+     "heading": "## Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "nri-ai/gpt-oss-20b-Ja-Fin-CPT",
+   "url": "https://huggingface.co/nri-ai/gpt-oss-20b-Ja-Fin-CPT",
+   "org": "株式会社野村総合研究所",
+   "license": "apache-2.0",
+   "downloads_all": 321,
+   "created": "2026-03-09",
+   "gated": false,
+   "readme_chars": 4709,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "openai/gpt-oss-20b"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": {
+     "by": "readme",
+     "heading": "## Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "pfnet/plamo-2-1b",
+   "url": "https://huggingface.co/pfnet/plamo-2-1b",
+   "org": "株式会社 Preferred Networks",
+   "license": "apache-2.0",
+   "downloads_all": 646098,
+   "created": "2025-02-05",
+   "gated": false,
+   "readme_chars": 3724,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": {
+     "by": "readme",
+     "heading": "## Training Dataset"
+    },
+    "tuning": null,
+    "eval": null,
+    "safety": {
+     "by": "readme",
+     "heading": "## Bias, Risks, and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "stockmark/Stockmark-2-VL-100B-beta",
+   "url": "https://huggingface.co/stockmark/Stockmark-2-VL-100B-beta",
+   "org": "ストックマーク株式会社",
+   "license": "other",
+   "downloads_all": 7900,
+   "created": "2025-05-27",
+   "gated": false,
+   "readme_chars": 13281,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Evaluation"
+    },
+    "safety": {
+     "by": "readme",
+     "heading": "## Risks and Limitations"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "other"
+    }
+   }
+  },
+  {
+   "id": "stockmark/Stockmark-DocReasoner-Qwen2.5-VL-32B",
+   "url": "https://huggingface.co/stockmark/Stockmark-DocReasoner-Qwen2.5-VL-32B",
+   "org": "ストックマーク株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 1255,
+   "created": "2026-03-19",
+   "gated": false,
+   "readme_chars": 11036,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen2.5-VL-32B-Instruct"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Evaluation"
+    },
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "stockmark/stockmark-100b",
+   "url": "https://huggingface.co/stockmark/stockmark-100b",
+   "org": "ストックマーク株式会社",
+   "license": "mit",
+   "downloads_all": 27519,
+   "created": "2024-05-13",
+   "gated": false,
+   "readme_chars": 3103,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": {
+     "by": "readme",
+     "heading": "## Dataset (pretraining)"
+    },
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Performance"
+    },
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "mit"
+    }
+   }
+  },
+  {
+   "id": "EQUES/JPharmatron-7B",
+   "url": "https://huggingface.co/EQUES/JPharmatron-7B",
+   "org": "株式会社 EQUES",
+   "license": "cc-by-sa-4.0",
+   "downloads_all": 12513,
+   "created": "2025-04-22",
+   "gated": "auto",
+   "readme_chars": 0,
+   "has_readme": false,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "EQUES/JPharmatron-7B-base"
+     ]
+    },
+    "data": {
+     "by": "gated"
+    },
+    "tuning": {
+     "by": "gated"
+    },
+    "eval": {
+     "by": "gated"
+    },
+    "safety": {
+     "by": "gated"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "cc-by-sa-4.0"
+    }
+   }
+  },
+  {
+   "id": "abeja/ABEJA-QwQ32b-Reasoning-Japanese-v1.0",
+   "url": "https://huggingface.co/abeja/ABEJA-QwQ32b-Reasoning-Japanese-v1.0",
+   "org": "株式会社 ABEJA",
+   "license": "apache-2.0",
+   "downloads_all": 7770,
+   "created": "2025-03-25",
+   "gated": false,
+   "readme_chars": 2091,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen2.5-32B-Instruct",
+      "abeja/ABEJA-Qwen2.5-32b-Japanese-v0.1",
+      "Qwen/QwQ-32B"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "abeja/ABEJA-Qwen2.5-32b-Japanese-v0.1",
+   "url": "https://huggingface.co/abeja/ABEJA-Qwen2.5-32b-Japanese-v0.1",
+   "org": "株式会社 ABEJA",
+   "license": "apache-2.0",
+   "downloads_all": 11273,
+   "created": "2025-01-17",
+   "gated": false,
+   "readme_chars": 1447,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen2.5-32B-Instruct"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "abeja/ABEJA-Qwen2.5-32b-Japanese-v1.0",
+   "url": "https://huggingface.co/abeja/ABEJA-Qwen2.5-32b-Japanese-v1.0",
+   "org": "株式会社 ABEJA",
+   "license": "apache-2.0",
+   "downloads_all": 14033,
+   "created": "2025-05-14",
+   "gated": false,
+   "readme_chars": 1413,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen2.5-32B-Instruct",
+      "abeja/ABEJA-Qwen2.5-32b-Japanese-v0.1"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "abeja/ABEJA-Qwen2.5-7b-Japanese-v0.1",
+   "url": "https://huggingface.co/abeja/ABEJA-Qwen2.5-7b-Japanese-v0.1",
+   "org": "株式会社 ABEJA",
+   "license": "apache-2.0",
+   "downloads_all": 18367,
+   "created": "2025-03-12",
+   "gated": false,
+   "readme_chars": 1443,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen2.5-7B-Instruct"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "abeja/ABEJA-Qwen3-14B-Agentic-256k-v0.1",
+   "url": "https://huggingface.co/abeja/ABEJA-Qwen3-14B-Agentic-256k-v0.1",
+   "org": "株式会社 ABEJA",
+   "license": "apache-2.0",
+   "downloads_all": 1269,
+   "created": "2026-02-04",
+   "gated": false,
+   "readme_chars": 1288,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen3-14B-Base"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "aidealab/AIdeaLab-VideoMoE-7B-A2B",
+   "url": "https://huggingface.co/aidealab/AIdeaLab-VideoMoE-7B-A2B",
+   "org": "株式会社 AIdeaLab",
+   "license": "apache-2.0",
+   "downloads_all": 0,
+   "created": "2025-11-12",
+   "gated": false,
+   "readme_chars": 2718,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Wan-AI/Wan2.1-T2V-1.3B"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "nablasinc/NABLA-VL",
+   "url": "https://huggingface.co/nablasinc/NABLA-VL",
+   "org": "NABLAS 株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 3957,
+   "created": "2025-03-31",
+   "gated": "auto",
+   "readme_chars": 0,
+   "has_readme": false,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "microsoft/phi-4"
+     ]
+    },
+    "data": {
+     "by": "gated"
+    },
+    "tuning": {
+     "by": "gated"
+    },
+    "eval": {
+     "by": "gated"
+    },
+    "safety": {
+     "by": "gated"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "r-g2-2024/Llama-3.1-70B-Instruct-multimodal-JP-Graph-v0.1",
+   "url": "https://huggingface.co/r-g2-2024/Llama-3.1-70B-Instruct-multimodal-JP-Graph-v0.1",
+   "org": "株式会社リコー",
+   "license": "other",
+   "downloads_all": 2428,
+   "created": "2025-07-17",
+   "gated": false,
+   "readme_chars": 7226,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "tokyotech-llm/Llama-3.1-Swallow-70B-Instruct-v0.3"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "other"
+    }
+   }
+  },
+  {
+   "id": "ricoh-ai/Qwen-3-VL-Ricoh-8B-20260227",
+   "url": "https://huggingface.co/ricoh-ai/Qwen-3-VL-Ricoh-8B-20260227",
+   "org": "株式会社リコー",
+   "license": "apache-2.0",
+   "downloads_all": 3884,
+   "created": "2026-03-23",
+   "gated": "auto",
+   "readme_chars": 0,
+   "has_readme": false,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "Qwen/Qwen3-VL-8B-Thinking"
+     ]
+    },
+    "data": {
+     "by": "gated"
+    },
+    "tuning": {
+     "by": "gated"
+    },
+    "eval": {
+     "by": "gated"
+    },
+    "safety": {
+     "by": "gated"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "stockmark/Stockmark-2-100B-Instruct",
+   "url": "https://huggingface.co/stockmark/Stockmark-2-100B-Instruct",
+   "org": "ストックマーク株式会社",
+   "license": "mit",
+   "downloads_all": 3806,
+   "created": "2025-07-08",
+   "gated": false,
+   "readme_chars": 3069,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## Model performance"
+    },
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "mit"
+    }
+   }
+  },
+  {
+   "id": "stockmark/Stockmark-DocReasoner-Qwen2.5-VL-32B-FP8-dynamic",
+   "url": "https://huggingface.co/stockmark/Stockmark-DocReasoner-Qwen2.5-VL-32B-FP8-dynamic",
+   "org": "ストックマーク株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 4758,
+   "created": "2026-03-25",
+   "gated": false,
+   "readme_chars": 4096,
+   "has_readme": true,
+   "items": {
+    "base": {
+     "by": "meta",
+     "field": "base_model",
+     "value": [
+      "stockmark/Stockmark-DocReasoner-Qwen2.5-VL-32B"
+     ]
+    },
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "weblab-GENIAC/Tanuki-8B-dpo-v1.0",
+   "url": "https://huggingface.co/weblab-GENIAC/Tanuki-8B-dpo-v1.0",
+   "org": "国立大学法人東京大学",
+   "license": "apache-2.0",
+   "downloads_all": 36964,
+   "created": "2024-08-12",
+   "gated": false,
+   "readme_chars": 3207,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## ベンチマーク"
+    },
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "weblab-GENIAC/Tanuki-8B-vision",
+   "url": "https://huggingface.co/weblab-GENIAC/Tanuki-8B-vision",
+   "org": "国立大学法人東京大学",
+   "license": "apache-2.0",
+   "downloads_all": 463,
+   "created": "2024-08-16",
+   "gated": false,
+   "readme_chars": 1594,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "### 評価"
+    },
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "weblab-GENIAC/Tanuki-8x8B-dpo-v1.0",
+   "url": "https://huggingface.co/weblab-GENIAC/Tanuki-8x8B-dpo-v1.0",
+   "org": "国立大学法人東京大学",
+   "license": "apache-2.0",
+   "downloads_all": 9931,
+   "created": "2024-08-12",
+   "gated": false,
+   "readme_chars": 5004,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## ベンチマーク"
+    },
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "weblab-GENIAC/Tanuki-8x8B-vision-exp",
+   "url": "https://huggingface.co/weblab-GENIAC/Tanuki-8x8B-vision-exp",
+   "org": "国立大学法人東京大学",
+   "license": "apache-2.0",
+   "downloads_all": 214,
+   "created": "2024-08-16",
+   "gated": false,
+   "readme_chars": 1522,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "### 評価"
+    },
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "wovenbytoyota-vai/Woven-City-AI-Vision-Engine",
+   "url": "https://huggingface.co/wovenbytoyota-vai/Woven-City-AI-Vision-Engine",
+   "org": "ウーブン・バイ・トヨタ株式会社",
+   "license": "other",
+   "downloads_all": 0,
+   "created": "2025-10-10",
+   "gated": false,
+   "readme_chars": 14946,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": null,
+    "tuning": null,
+    "eval": {
+     "by": "readme",
+     "heading": "## 🏆 MVBench Evaluation Leaderboard"
+    },
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "other"
+    }
+   }
+  },
+  {
+   "id": "ONESTRUCTION/Ishigaki-IDS-8B",
+   "url": "https://huggingface.co/ONESTRUCTION/Ishigaki-IDS-8B",
+   "org": "ＯＮＥＳＴＲＵＣＴＩＯＮ株式会社",
+   "license": "cc-by-4.0",
+   "downloads_all": 133,
+   "created": "2026-03-23",
+   "gated": "auto",
+   "readme_chars": 0,
+   "has_readme": false,
+   "items": {
+    "base": {
+     "by": "gated"
+    },
+    "data": {
+     "by": "gated"
+    },
+    "tuning": {
+     "by": "gated"
+    },
+    "eval": {
+     "by": "gated"
+    },
+    "safety": {
+     "by": "gated"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "cc-by-4.0"
+    }
+   }
+  },
+  {
+   "id": "aihub-geniac/oboro",
+   "url": "https://huggingface.co/aihub-geniac/oboro",
+   "org": "AiHUB 株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 0,
+   "created": "2025-06-17",
+   "gated": "auto",
+   "readme_chars": 0,
+   "has_readme": false,
+   "items": {
+    "base": {
+     "by": "gated"
+    },
+    "data": {
+     "by": "gated"
+    },
+    "tuning": {
+     "by": "gated"
+    },
+    "eval": {
+     "by": "gated"
+    },
+    "safety": {
+     "by": "gated"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  },
+  {
+   "id": "pfnet/plamo-2-8b",
+   "url": "https://huggingface.co/pfnet/plamo-2-8b",
+   "org": "株式会社 Preferred Networks",
+   "license": "other",
+   "downloads_all": 6099,
+   "created": "2025-02-07",
+   "gated": "auto",
+   "readme_chars": 0,
+   "has_readme": false,
+   "items": {
+    "base": {
+     "by": "gated"
+    },
+    "data": {
+     "by": "gated"
+    },
+    "tuning": {
+     "by": "gated"
+    },
+    "eval": {
+     "by": "gated"
+    },
+    "safety": {
+     "by": "gated"
+    },
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "other"
+    }
+   }
+  },
+  {
+   "id": "stockmark/Stockmark-2-100B-Instruct-beta",
+   "url": "https://huggingface.co/stockmark/Stockmark-2-100B-Instruct-beta",
+   "org": "ストックマーク株式会社",
+   "license": "mit",
+   "downloads_all": 2435,
+   "created": "2025-03-05",
+   "gated": false,
+   "readme_chars": 1970,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "mit"
+    }
+   }
+  },
+  {
+   "id": "turing-motors/drive_titok_s_640",
+   "url": "https://huggingface.co/turing-motors/drive_titok_s_640",
+   "org": "Turing 株式会社",
+   "license": "apache-2.0",
+   "downloads_all": 0,
+   "created": "2026-03-19",
+   "gated": false,
+   "readme_chars": 1244,
+   "has_readme": true,
+   "items": {
+    "base": null,
+    "data": null,
+    "tuning": null,
+    "eval": null,
+    "safety": null,
+    "license": {
+     "by": "meta",
+     "field": "license",
+     "value": "apache-2.0"
+    }
+   }
+  }
+ ]
+}
