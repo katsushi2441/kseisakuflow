@@ -3,7 +3,7 @@
 政策が「どの会議で形づくられ → どれだけ予算がつき → だれに採択され → どう実施され → どう評価されたか」を、
 公表資料だけでつないで並べるデータ作り。画面は国会トラッカーの中（xb4g/giin の lib/flow_pages.php・lib/flow_koho.php）。
 
-- 公開: https://xb4g.com/giin/flow/ （分野: /flow/ai・/flow/koho・/flow/cyber）
+- 公開: https://xb4g.com/giin/flow/ （分野: /flow/ai・/flow/koho・/flow/cyber・/flow/iryo-fukushi-yushi・/flow/denshi-shohosen）
 - しないこと: 利益相反の有無の判断、事業・組織・人の評価、推測。同じ名前が両方に出るものを「出る」と並べるだけ。
 
 ## 分野の設定（fields/<分野>.json）

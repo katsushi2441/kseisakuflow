@@ -1,0 +1,86 @@
+{
+ "slug": "denshi-shohosen",
+ "name": "電子処方箋",
+ "title": "Kurage 政策の流れトラッカー｜電子処方箋",
+ "lead": "電子処方箋は、医師・歯科医師が出した処方と薬局で渡した薬の情報を、医療機関と薬局のあいだで共有する仕組みです。その事業の根拠になった計画、予算、支出先、目標と実績、点検、国会の質疑を、公開されている資料だけでつないで並べます。国会でどれだけ議論されたかだけでなく、その議論が予算や事業、成果の記載にどう結びついているかをたどれるようにするためのものです。事業や組織の評価はしません。出すのは公表資料の記載と、その出典だけです。",
+ "ui": {
+  "topic": "電子処方箋",
+  "policy": "plans",
+  "budget": "current",
+  "kokkai_examples": "電子処方箋、電子処方箋 薬局",
+  "plan_example": "医療DXの推進に関する工程表",
+  "body_note": "医療提供体制の交付金や医薬品の流通を確かめるシステムのように、電子処方箋が目的の一部にすぎない大きな事業"
+ },
+ "rs_years": [
+  "2025",
+  "2024"
+ ],
+ "rs_match": {
+  "regex": "電子処方箋|電子処方せん",
+  "words_label": "電子処方箋",
+  "name_fields": [
+   "事業名"
+  ],
+  "body_fields": [
+   "事業の目的",
+   "現状・課題",
+   "事業の概要"
+  ]
+ },
+ "councils_file": "data/councils_none.json",
+ "awards_file": "data/awards_none.json",
+ "outcomes_file": "data/outcomes_shohosen_none.json",
+ "council_name_min_len": 10,
+ "trackers": [
+  "denshi-karte",
+  "chiiki-iryo-renkei",
+  "iyakuhin-antei-kyokyu",
+  "otc-ruiji-yaku"
+ ],
+ "project_links": {
+  "19867": {
+   "kokkai_terms": [
+    "電子処方箋"
+   ]
+  },
+  "19869": {
+   "kokkai_terms": [
+    "電子処方箋"
+   ]
+  },
+  "19879": {
+   "kokkai_terms": [
+    "電子処方箋"
+   ]
+  },
+  "19884": {
+   "kokkai_terms": [
+    "電子処方箋"
+   ]
+  },
+  "2246": {
+   "kokkai_terms": [
+    "電子処方箋"
+   ]
+  },
+  "2016": {
+   "kokkai_terms": [
+    "電子処方箋 電子署名"
+   ]
+  },
+  "7011": {
+   "kokkai_terms": [
+    "電子処方箋 薬局"
+   ]
+  }
+ },
+ "card_line2": "国会の質疑から予算・普及の実績までどうつながったか。",
+ "card_sub1": "根拠の計画・予算・支出先・点検・国会の質疑を1本に。",
+ "card_sub2": "行政事業レビューと国会会議録を、出典つきで。",
+ "card_steps": [
+  "計画",
+  "予算",
+  "点検",
+  "国会"
+ ]
+}
